@@ -1,0 +1,27 @@
+---
+layout: page
+title: BrightstarDB
+order: 2
+---
+
+<div class="media">
+    <div class="media-left media-top">
+        <img src="/assets/images/brightstar.png" alt="BrightstarDB" width="64" height="64" class="pull-left" />
+    </div>
+    <div class="media-body">
+        <h3 class="media-heading">Introduction</h3>
+        <p><a href="http://brightstardb.com">BrightstarDB</a> was created with the goal of making the benefits of the flexible, schema-free RDF model available to .NET developers in an easy-to-use persistent store. BrightstarDB is, at its core, an RDF data store capable of handling millions of RDF triples; but unlike many other stores, BrightstarDB does not force the programmer to use an unfamiliar RDF-based API (although the RDF model and SPARQL queries are there if you want them). Instead we built two layers on top; one that enables the use of .NET&#8217;s dynamic objects for retrieval and update; and another that provides a full &#8220;contract-first&#8221; entity model allowing you to define an application&#8217;s domain model as .NET interfaces with minimal annotation and then use LINQ to query the data store and a &#8220;context object&#8221; pattern that will be familiar to users of the .NET Entity Framework for entity creation and update operations.</p>
+        
+        <p>BrightstarDB is fully open-source and licensed under the permissive MIT license. The source code is <a href="https://github.com/BrightstarDB/brightstardb">hosted on GitHub</a>, and project binaries are available from our <a href="http://brightstardb.codeplex.com/">CodeProject homepage</a> or via NuGet.</p>
+    </div>
+</div>
+
+<h3>Key Features</h3>
+<p><strong>Schema-free data store</strong>: BrightstarDB implements the RDF graph model which enables the storage of data of almost any shape. It gives the developer unprecedented freedom to evolve an application data model or even to combine multiple overlapping application data models into the same persistent store.</p>
+<p><strong>Contract-first Entity Framework</strong>: For many .NET developers it is much more comfortable to work with an application-specific data model and LINQ. This is particularly true when building MVC-style applications. BrightstarDB supports this by allowing an application data model to be defined as a set of .NET interfaces from which the concrete classes are automatically generated. Because of the schema-free nature of BrightstarDB an application data model can reflect all or just a part of the data managed in a BrightstarDB store &#8211; in this way multiple applications can concurrently use the same BrightstarDB store with each having its own application-specific &#8220;view&#8221; of the data.</p>
+<p><strong>Embeddable database</strong>: BrightstarDB offers both a client-server model and an embedded database model.</p>
+<p><strong>Cross-Platform</strong>: The embedded version can also run under Windows Phone and the database files are portable between versions. At the time of writing Portable Class Library and Mono ports are also planned.</p>
+<p><strong>Latest RDF Standards Support</strong>: BrightstarDB builds on the <a href="http://www.dotnetrdf.org/">dotNetRDF</a> library which enables us to support a wide variety of RDF import and export syntaxes as well as SPARQL 1.1 Query and Update.</p>
+
+<h3>NetworkedPlanet Involvement</h3>
+<p>BrightstarDB was originally created by the founders of NetworkedPlanet, and since going open-source NetworkedPlanet is a key contributor to the BrightstarDB project effort. We are proud to offer <a href="http://www.networkedplanet.com/support/brightstardb-support/" title="BrightstarDB Support">commercial support contracts for BrightstarDB</a> as well as consultancy, training and bespoke development. Please <a href="mailto:contact@networkedplanet.com">email us</a> if you are interested in the services we can offer.</p>
