@@ -6,8 +6,12 @@
 $body-bg: #ededed;
 $hr-border: darken($body-bg, 15%);
 
+$brand-primary: #ea9417;
+
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import  "bootstrap";
+
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,600,700);
 
 .marketing img {
     background-color: #fff;
@@ -115,9 +119,13 @@ of those sections to manage the look and feel of the site. */
 
 .sn-section {
     min-height: 100%;
-    padding-top: 150px;
+    padding-top: 50px;
     text-align: center;
     background: #fff;
+}
+
+#intro {
+  padding-top: 150px;
 }
 
 .sn-section:nth-child(even) {
@@ -171,4 +179,17 @@ html.scrollnav {
 
 .spacer-top {
   padding-top: 100px;
+}
+
+.intropara {
+  font-family: 'Cabin', sans-serif;
+}
+
+.highlight {
+  font-size: 125%;
+  font-weight: bold;
+}
+
+.spacer4 {
+	height: 4ex;
 }
