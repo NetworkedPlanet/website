@@ -1,25 +1,15 @@
-<footer class="footer">
-    <div class="container">
-        <div class="spacer">&nbsp;</div>
-        <div class="row">
-            <div class="col-xs-6">
-                <p>&copy; 2015 Networked Planet Limited.</p>
-            </div>
-            <div class="col-xs-6">
-                <div class="pull-right">
-                    <a href="#">Back to top</a>
-                </div>
-            </div>
-        </div> <!-- /.row -->
-        <div class="row">
-            <div class="col-xs-12">
-                <small class="text-muted">Registered in England no. 5273377 Registered Office: 17 Cosgrove Road, Old Stratford, Milton Keynes, MK19 6AG</small>
-            </div>
-        </div>
-    </div>
-</footer>
+<!DOCTYPE html>
+<html class="scrollnav">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  {% include head.html %}
+
+  <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="scrollnav">
+
+    {% include scrollnav-header.html %}
+
+        {{ content }}
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <!-- Bootstrap plugins -->
 <script src="{{ '/assets/javascripts/bootstrap.min.js' | prepend: site.baseurl }}"></script>
@@ -49,3 +39,7 @@
     }
 </script>
 
+
+    </body>
+
+</html>

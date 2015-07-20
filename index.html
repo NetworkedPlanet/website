@@ -1,41 +1,172 @@
 ---
-layout: default
+layout: scrollnav
 ---
-    <div class="marketing">
-        <div class="well lead" style="text-align:center">
-            NetworkedPlanet provides the tools and products to help organizations to manage knowledge and content together.
+<!-- Intro Section -->
+    <section id="intro" class="sn-section">
+        <div class="container">
+            <div class="row">
+				<div class="col-md-6">
+					<image src="assets/images/laptop.jpg" class="img-responsive center-block"/>
+				</div>
+                <div class="col-md-6 text-justify">
+					<p class="intropara lead">
+						We provide the <span class="highlight">tools</span>, <span class="highlight">knowledge</span> and <span class="highlight">experience</span> to help organisations 
+						of all sizes make the best use of the data,
+						content and knowledge that sit in disparate silos. We connect
+						people with the information they need, when they need it.
+					</p>
+					<p class="intropara lead">We are passionate advocates of <span class="highlight">Linked Open Data</span>.<br/>
+					We believe that publishing Open Data helps organisations build trust through transparency and gain leadership by publicising their knowledge.</p>
+					<p class="intropara lead">We believe that by linking Open Data we can together create a true <span class="highlight">Web of Data</span> with possibilities beyond our imagining.</p>
+					<div class="text-center">
+						<a class="btn page-scroll btn-lg btn-primary text-center" href="#products">Products</a>
+						<a class="btn page-scroll btn-lg btn-primary text-center" href="#services">Services</a>
+					</div>
+                </div>
+            </div>
+			<div class="spacer4"></div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="sn-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>Our Products</h1>
+                </div>
+            </div>
+			<div class="row">
+            <div class="col-md-6">
+                <img src="/assets/images/dp1.png" class="img-responsive center-block"/>
+            </div>
+            <div class="col-md-6 text-justify-md text-center-sm">
+                <h2 class="text-center">Data Platform</h2>
+                <p>Networked Planet’s Data Platform offers an easy-to-use web platform for organisations of any size to publish data for use on the Semantic Web.</p>
+                <p>Using existing Semantic Web standards, the Data Platform makes it simple to manage and host your data and provides an themeable interface for users to browse hosted datasets.</p>
+                <p class="text-center"><a class="btn btn-primary" href="http://dataplatform.co.uk/">Visit the Data Platform site &raquo;</a></p>
+            </div>
         </div>
         
         <div class="row">
-            <div class="col-lg-6">
-                <img src="/assets/images/brightstardb1.png"/>
+            <div class="col-md-6">
+                <img src="/assets/images/brightstardb1.png" class="img-responsive center-block"/>
+			</div>
+			<div class="col-md-6">
                 <h2>BrightstarDB</h2>
                 <p>BrightstarDB is a native .NET RDF triple store with some unique features that make it the ideal platform for developing
 both Linked Data applications and generic applications that require a flexible schema-free approach to storage in a .NET
 environment. BrightstarDB was created by the founders of NetworkedPlanet and is now an open-source project.</p>
-                <p><a class="btn btn-default" href="#" role="button">Read More &raquo;</a></p>
+                <p><a class="btn btn-primary" href="http://brightstardb.com/">Visit the BrightstarDB site &raquo;</a></p>
             </div>
-            <div class="col-lg-6">
-                <img src="/assets/images/web31.png"/>
+		</div>
+		<hr/>
+		<div class="row row-centered">
+            <div class="col-md-4">
+                <img src="/assets/images/web31.png" class="img-responsive center-block"/>
                 <h2>Web3 Platform</h2>
-                <p>The Networked Planet Web3 Platform provides a complete solution for managing and publishing semantic data. Web3 makes it easy to create domain knowledge models complete with semantic links between concepts and provides a simple browser-based interface for adding and editing concepts and their relationships.</p>
-                <p><a class="btn btn-default" href="#" role="button">Read More &raquo;</a></p>
+                <p>The Networked Planet Web3 Platform provides a complete solution for managing and publishing <a href="/glossary/topic-maps/">ISO Topic Maps</a>. Web3 makes it easy to create domain knowledge models complete with semantic links between topics and provides a simple browser-based interface for adding and editing topics and their relationships.</p>
+                <p><a class="btn btn-default" href="/web3/" role="button">Read More &raquo;</a></p>
             </div>
+        
+			<div class="col-md-4">
+				<img src="/assets/images/cfs1.png" class="img-responsive center-block"/>
+				<h2>Concepts for SharePoint</h2>
+				<p>Concepts for SharePoint makes it possible to integrate a complex domain knowledge model into the standard SharePoint Managed Metadata System (MMS). Users can navigate via Concept Pages, that bring relevant content directly to them without requiring them to search.</p>
+				<p><a class="btn btn-default" href="/concepts-for-sharepoint/" role="button">Read More &raquo;</a></p>
+			</div>
+			
+			<div class="col-md-4">
+				<img src="/assets/images/cfe1.png" class="img-responsive center-block"/>
+				<h2>Concepts for EPiServer</h2>
+				<p>Like many web content management systems, EPiServer manages the pages of a site in a strict hierarchy with limited tagging support for managing other groupings of pages. With Concepts for EPiServer it is possible to use an existing domain knowledge model to structure the content of and access to a web site; or as a way to better index and organize existing site content.</p>
+				<p><a class="btn btn-default" href="/concepts-for-episerver" role="button">Read More &raquo;</a></p>
+			</div>
+		</div>
         </div>
-        <hr/>
-        <div class="row">
-            <div class="col-lg-6">
-                <img src="/assets/images/cfs1.png"/>
-                <h2>Concepts for SharePoint</h2>
-                <p>Concepts for SharePoint makes it possible to integrate a complex domain knowledge model into the standard SharePoint Managed Metadata System (MMS). Users can navigate via Concept Pages, that bring relevant content directly to them without requiring them to search.</p>
-                <p><a class="btn btn-default" href="#" role="button">Read More &raquo;</a></p>
-            </div>
-            <div class="col-lg-6">
-                <img src="/assets/images/cfe1.png"/>
-                <h2>Concepts for EPiServer</h2>
-                <p>Like many web content management systems, EPiServer manages the pages of a site in a strict hierarchy with limited tagging support for managing other groupings of pages. With Concepts for EPiServer it is possible to use an existing domain knowledge model to structure the content of and access to a web site; or as a way to better index and organize existing site content.</p>
-                <p><a class="btn btn-default" href="#" role="button">Read More &raquo;</a></p>
-            </div>
-        </div>
-    </div>
+    </section>
 
+	<!-- Services -->
+	<section id="services" class="sn-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-justify-md">
+					<h2>Consultancy</h2>
+					<p class="lead">
+						NetworkedPlanet can provide your organization with the help and support necessary to kick-start the process 
+						of building a domain knowledge model and creating linked data.</p>
+					<p>Our approach focuses on getting the details about the domain and the source data out of the heads of the subject matter experts and into a form that can be expressed visually and clearly documented as a first step to building a knowledge structure or planning a data extraction and transform. This approach is independent of any final implementation (whether it is with NetworkedPlanet’s tools or with other tools).</p>
+					<p>We can also help with the technical aspects of implementation using our products, giving you the advice and support you need to make the best use of them in your projects. We can also develop bespoke solutions and integrations that meet your needs.</p>
+
+					<div class="spacer"></div>
+
+					<h2>Training</h2>
+					<p class="lead">NetworkedPlanet provides a number of basic training courses that can be held on your premises.</p>
+					
+					<h3> Linked Data and RDF </h3>
+					<p>We provide a number of different courses on the fundamentals of RDF and its application in publishing Linked Data.
+					These courses cover topics such as the RDF model; RDF Schema; OWL Ontologies; querying RDF with SPARQL; and publishing Linked Data with RDF; in theory and in practice</p>
+
+					<h3>Topic Maps Training</h3>
+					<p>We provide courses on the theory and practice of topic maps, covering aspects such as: the core topic map model;
+					how to make topic maps using Web3; topic map patterns and anti-patterns; building topic maps for future extensibility; and querying topic maps with SPARQL.</p>
+
+					<h3>Product Training</h3>
+					<p>We can also provide standard and bespoke training courses for any of our products.</p>
+
+					<p class="text-center"><a href="#contact" class="page-scroll btn btn-primary btn-lg">Contact Us</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+    <!-- Contact Section -->
+    <section id="contact" class="sn-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+					<div class="spacer4">&nbsp;</div>
+					<p><a class="btn btn-primary btn-lg">Request Evaluation</a></p>
+					<div class="spacer">&nbsp;</div>
+					
+					<h2>Sales and General Enquiries</h2>
+					<p class="lead"><img src="/assets/images/ic_email.svg" alt="Email" class="icon"/> contact@networkedplanet.com</p>
+					<div class="spacer">&nbsp;</div>
+					
+					<h2>Support and Technical Enquiries</h2>
+					<p class="lead"><img src="/assets/images/ic_email.svg" alt="Email" class="icon"/> support@networkedplanet.com</p>
+					<div class="spacer">&nbsp;</div>
+
+					<h2>Everything Else</h2>
+					<div class="row">
+						<div class="col-sm-6">
+					<address>
+					NetworkedPlanet Limited<br/>
+Unit 2, The Gallery<br/>
+54 Marston Street<br/>
+Oxford<br/>
+OX4 1LF<br/>
+UK
+					</address>
+					</div>
+					<div class="col-sm-6 text-left-sm text-center-xs">
+						<p><img src="/assets/images/ic_email.svg" alt="Email" class="icon"/> contact@networkedplanet.com</p>
+						<p><img src="/assets/images/ic_phone.svg" alt="Phone" class="icon"/> +44 (0) 1865 240439</p>
+					</div>
+					
+                </div>
+            </div>
+			<div class="spacer">&nbsp;</div>
+			<div class="row text-left">
+				<div class="pull-right">
+				<script src="http://directory.theodi.org/members/ZC6408HJ/badge?size=small&align=right&colour=black" type="text/javascript"></script>
+				</div>
+					<p>Copyright 2015 Networked Planet Limited.</p>
+					<p>Lead image <a href="https://www.flickr.com/photos/rh2ox/9990016123/">data.path Ryoji.Ikeda - 3</a> by <a href="https://www.flickr.com/photos/rh2ox">r2hox</a>. 
+					<p><small class="text-muted">Registered in England no. 5273377 Registered Office: 17 Cosgrove Road, Old Stratford, Milton Keynes, MK19 6AG</small></p>
+			</div> <!-- /.row -->
+			<div class="row">
+			</div>
+		</div>
+    </section>
+	
