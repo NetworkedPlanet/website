@@ -10,6 +10,7 @@ $brand-primary: #ea9417;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import  "bootstrap";
+@import  "blog";
 
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,600,700);
 
@@ -193,3 +194,4 @@ html.scrollnav {
 .spacer4 {
 	height: 4ex;
 }
+
