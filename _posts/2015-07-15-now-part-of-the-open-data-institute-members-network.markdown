@@ -10,6 +10,9 @@ og_image: images/odi/ODI-logo-xlg.png
 og_image_type: image/png
 og_image_width: 397
 og_image_height: 171
+tags:
+  - odi
+  - company news
 ---
 
 <div class="pull-right">
