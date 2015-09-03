@@ -23,3 +23,11 @@ All customers with a current support contract can access an upgrade to the lates
 | TMCore SharePoint Module	| 3.2 Hotfix 5
 | TMCore Enterprise Services | 1.1.2
 {:.table}
+
+## Documentation ##
+All products come with complete documentation. For easier access we have put some of the more recent documentation online - if the product you require documentation for is not listed below please [contact us](mailto:support@networkedplanet.com). The following documentation is currently available:
+
+  * [TMCore07 SP6](./tmcore07sp6/)
+  * [TMCore EPiServer Module 7.0](./epimoduledocs_7.0/)
+  * [Web3 2.1 Admin and User Guide](./web3docs_2.1/)
+  * [Web3 2.1 API Documentation](./web3api_2.1)
