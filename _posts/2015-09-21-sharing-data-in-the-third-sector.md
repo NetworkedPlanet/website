@@ -41,25 +41,25 @@ And therein lies a real problem. There’s two parts to every charity - the side
 
 Whilst I can understand this fear of loss of control, I still wondered why I feel so personally aggrieved by it in these cases. And then it struck me - when I donate money to a charity, buy merchandise or volunteer my time - it’s because I’m supporting their cause, not the charity. I believe that they are doing everything they can to meet their mission statement. I thought that collaborating with people both within and outside of their sector would be one of those things, and so I find it extra frustrating.
 
-So what can be done? 
---------------------
+Tackling the common concerns
+----------------------------
 
 Of course we can see the benefits of sharing data, and I want to leave this post in a solution-focused way, so how do we address the fear that by publishing data they will lose funding? I’ll address some typical concerns:
 
-### 1. The data is worth money and by publishing it we’re giving it away for free
+### 1. The data is worth money and by publishing it we’re giving it away for free.
 
-If your data is currently bringing in money and is a revenue stream for a charity then by all means continue to do that! Some open data publishers choose to make their data free for some and businesses must pay a license fee to access the full set of data. 
+If your data is currently bringing in money and is a revenue stream for a charity then by all means continue to do that! Some open data publishers choose to make a subset of their data free and require a license fee to access the full set of data. 
 However, if you are not making any money from it and it’s just sitting in your databases being queried for reports now and again, it’s possible that it’s worth far more in knowledge advancement than it is a viable source of income for your organisation. Charities should carefully weigh up the social cost of not publishing their data as well as the cost in terms of lost revenue, if in fact there was any revenue coming from it.
 
-### 2. People could use the data to come up with Bad Science claims, we’re the specialists and can avoid that
+### 2. People could use the data to come up with "Bad Science" claims. We are the specialists and can avoid that.
 
 The best way to negate this is to have the data public so that it’s instantly provable that someone has made an error. It’s also possible that people could discover correlations between your data and others that you can use to improve your service. Discoveries that were impossible to make when the data was kept closed off.
 
-### 3. If someone else uses the data in some app or something, it gets popular and they get the publicity rather than us.
+### 3. If someone else uses the data in some app that becomes popular, they get the publicity rather than us.
 
-As mentioned earlier, you could choose to require people to pay for commercial access, but this is where we start getting into the grey area of what’s the purpose of the charity. If by publishing data you enable someone to develop a great app, visualisation or research paper that furthers the aim of your organisation then that’s money saved because you didn’t need to use any resources or money to do that. There are many data licenses you can choose from and my second favourite is the Attribution license - which means that anyone using the data must credit you as the source of that information. At the end of the day, a popular app can raise more awareness and gain more support for the cause and increase donations to the charity.
+As mentioned earlier, you could choose to require people to pay for commercial access, but this is where we start getting into the grey area of what’s the purpose of the charity. If by publishing data you enable someone to develop a great app, visualisation or research paper that furthers the aim of your organisation then that’s money saved because you didn’t need to use any resources or money to do that. There are many data licenses you can choose from and my second favourite is the [Attribution license](http://creativecommons.org/licenses/by/4.0/) - which means that anyone using the data must credit you as the source of that information. At the end of the day, a popular app can raise more awareness and gain more support for the cause and increase donations to the charity.
 
-### 4. People aren’t coming to *us* for the information
+### 4. People aren’t coming to *us* for the information.
 
 Firstly, someone **is** still coming to you for the information - the developers. Secondly, your data isn’t static, you need to collect it over time and it’s up to you whether you release new data every hour, day, week, month or even year! Meaning that people *are* coming back to you for the information - it’s just in a different format than you’re used to. 
 
