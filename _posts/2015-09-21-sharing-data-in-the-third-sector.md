@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Sharing Data In The Third Sector
-excerpt: Some thoughts about the reluctance of sharing data.
+excerpt: A recent talk given by DataKind UK gets us thinking about the attitudes to Open Data in the charity sector. Is there a reluctance to share data? If so, how can this be addressed to help charities collaborate and collectively work towards common goals.
 date:   2015-09-21 13:17:38
 author: Jen
 imgdir:	/assets/images/blog/
@@ -37,7 +37,7 @@ The potential benefits of sharing data are really not difficult to see. So why t
 
 ![Animated gif of the seagulls from Finding Nemo standing on a rock in the sea all shouting "Mine!"]({{page.imgdir}}seagulls_mine.gif){: .img-medium .center-block .img-responsive}
 	
-And therein lies a real problem. There’s two parts to every charity - the side working to help with the problem, and the side that exists to find funding so that the organisation can continue to do the good work they’re doing. Obviously finding funding (whether it be through public donations, business sponsorships or government funding) is absolutely key to be able to continue the work that a charity does. But who wins when those two sides are in opposition to each other? One side wants to share information in order to better collaborate and advance the charity’s mission, after all that’s the raison d’etre of the charity itself. The other side spends every hour trying to find money to keep going and finds it difficult to imagine that sharing data doesn’t automatically mean lost revenue (or potential revenue).
+And therein lies a real problem. There’s two parts to every charity - the side working to help with the problem, and the side that exists to find funding so that the organisation can continue to do the good work they’re doing. Obviously finding funding (whether it be through public donations, business sponsorships or government funding) is absolutely key to be able to continue the work that a charity does. But who wins when those two sides are in opposition to each other? One side wants to share information in order to better collaborate and advance the charity’s mission, after all that’s the raison d’être of the charity itself. The other side spends every hour trying to find money to keep going and finds it difficult to imagine that sharing data doesn’t automatically mean lost revenue (or potential revenue).
 
 Whilst I can understand this fear of loss of control, I still wondered why I feel so personally aggrieved by it in these cases. And then it struck me - when I donate money to a charity, buy merchandise or volunteer my time - it’s because I’m supporting their cause, not the charity. I believe that they are doing everything they can to meet their mission statement. I thought that collaborating with people both within and outside of their sector would be one of those things, and so I find it extra frustrating.
 
@@ -46,24 +46,24 @@ Tackling the common concerns
 
 Of course we can see the benefits of sharing data, and I want to leave this post in a solution-focused way, so how do we address the fear that by publishing data they will lose funding? I’ll address some typical concerns:
 
-### 1. The data is worth money and by publishing it we’re giving it away for free.
+### 1. "The data is worth money and by publishing it we’re giving it away for free."
 
 If your data is currently bringing in money and is a revenue stream for a charity then by all means continue to do that! Some open data publishers choose to make a subset of their data free and require a license fee to access the full set of data. 
 However, if you are not making any money from it and it’s just sitting in your databases being queried for reports now and again, it’s possible that it’s worth far more in knowledge advancement than it is a viable source of income for your organisation. Charities should carefully weigh up the social cost of not publishing their data as well as the cost in terms of lost revenue, if in fact there was any revenue coming from it.
 
-### 2. People could use the data to come up with "Bad Science" claims. We are the specialists and can avoid that.
+### 2. "People could use the data to come up with 'Bad Science' claims. We are the specialists and can avoid that."
 
 The best way to negate this is to have the data public so that it’s instantly provable that someone has made an error. It’s also possible that people could discover correlations between your data and others that you can use to improve your service. Discoveries that were impossible to make when the data was kept closed off.
 
-### 3. If someone else uses the data in some app that becomes popular, they get the publicity rather than us.
+### 3. "If someone else uses the data in some app that becomes popular, they get the publicity rather than us."
 
 As mentioned earlier, you could choose to require people to pay for commercial access, but this is where we start getting into the grey area of what’s the purpose of the charity. If by publishing data you enable someone to develop a great app, visualisation or research paper that furthers the aim of your organisation then that’s money saved because you didn’t need to use any resources or money to do that. There are many data licenses you can choose from and my second favourite is the [Attribution license](http://creativecommons.org/licenses/by/4.0/) - which means that anyone using the data must credit you as the source of that information. At the end of the day, a popular app can raise more awareness and gain more support for the cause and increase donations to the charity.
 
-### 4. People aren’t coming to *us* for the information.
+### 4. "People aren’t coming to *us* for the information."
 
 Firstly, someone **is** still coming to you for the information - the developers. Secondly, your data isn’t static, you need to collect it over time and it’s up to you whether you release new data every hour, day, week, month or even year! Meaning that people *are* coming back to you for the information - it’s just in a different format than you’re used to. 
 
 Final thoughts
 --------------------
 
-DataKind is doing a fantastic job of bringing charities and data scientists together to look at how more power can be leveraged by the data the charities already have. A lot of the projects they list show the use of Open Data from various sources as part of the work, so it was disappointing to hear that not many charities have embraced the idea of publishing data in order to feedback into that pool. However, I do get the feeling that the tide is turning - most worries stem from not understanding the specifics of publishing data; as more people take the time to investigate rather than dismiss out of hand, we are starting to see more charties be interested in leading the way into the Web of Data.
+DataKind is doing a fantastic job of bringing charities and data scientists together to look at how more power can be leveraged by the data the charities already have. A lot of the projects they list show the use of Open Data from various sources as part of the work, so it was disappointing to hear that not many charities have embraced the idea of publishing data in order to feedback into that pool. However, I do get the feeling that the tide is turning - most worries stem from not understanding the specifics of publishing data; as more people take the time to investigate rather than dismiss out of hand, we are starting to see more charities be interested in leading the way into the Web of Data.
