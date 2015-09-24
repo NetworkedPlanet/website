@@ -10,7 +10,7 @@ tag: power map
 tag: power query
 tag: query
 tag: sparql
-author: jen
+author: JW
 ---
 Following on from the previous post about <a href="http://www.networkedplanet.com/visualising-data-in-excel/">Visualizing data in Excel</a>, I decided to have a look at how easy it would be to load data from a SPARQL endpoint into an Excel Power Map.
 

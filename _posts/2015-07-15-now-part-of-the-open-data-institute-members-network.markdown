@@ -2,6 +2,7 @@
 layout: post
 title:  "We are now part of the Open Data Institute member network"
 date:   2015-07-15 14:17:38
+author: JW
 imgdir:	/images/odi/
 status: draft
 excerpt: It goes without saying that we are huge supporters of the Open Data Institute (ODI), but from today we are now official supporters of the ODI as part of their members network.

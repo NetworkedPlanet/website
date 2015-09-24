@@ -3,7 +3,7 @@ layout: post
 title: SharePoint Module 3.3 now available for SharePoint 2013
 category: Product Announcements
 category: TMCore SharePoint Module
-author: jen
+author: JW
 ---
 NetworkedPlanet are pleased to announce the release of version 3.3 of the TMCore SharePoint Module.
 

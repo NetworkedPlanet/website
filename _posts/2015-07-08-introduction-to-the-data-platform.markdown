@@ -2,6 +2,7 @@
 layout: post
 title:  "Introducing the Data Platform"
 date:   2015-07-08 15:21:38
+author: JW
 status: live
 tags:
   - data platform

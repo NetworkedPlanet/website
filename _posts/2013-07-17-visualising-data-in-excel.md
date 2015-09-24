@@ -8,7 +8,7 @@ tag: excel
 tag: power map
 tag: power query
 tag: tools
-author: jen
+author: JW
 ---
 After attending a very engaging and interesting talk given by <a href="http://blogs.blackmarble.co.uk/blogs/gshort/">Gary Short</a> at <a href="http://www.dotnetdevnet.com/">Bristol's DotNetDevNet</a> group, I decided to have a play around with two tools that he showed us for querying and visualizing data in Microsoft Excel.
 

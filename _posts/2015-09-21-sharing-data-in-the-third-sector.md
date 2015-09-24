@@ -3,9 +3,8 @@ layout: post
 title: Sharing Data In The Third Sector
 excerpt: A recent talk given by DataKind UK gets us thinking about the attitudes to Open Data in the charity sector. Is there a reluctance to share data? If so, how can this be addressed to help charities collaborate and collectively work towards common goals.
 date:   2015-09-21 13:17:38
-author: Jen
+author: JW
 imgdir:	/assets/images/blog/
-status: draft
 comments: true
 tags:
   - linked data

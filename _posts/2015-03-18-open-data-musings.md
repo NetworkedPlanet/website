@@ -4,7 +4,7 @@ title: Open Data Musings
 category: Linked Data
 tag: linked data
 tag: open data
-author: jen
+author: JW
 ---
 Recently I've been chatting to a lot of different people about the benefits of Open Data. One question that seems to crop up again and again is simply <i>why </i>open up the data they have collected to publish on the web?
 
