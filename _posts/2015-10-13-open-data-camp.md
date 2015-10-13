@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Open Data Camp
+title: Open Data Camp 2
 excerpt: Highlights from the second ODCamp UK - held in Manchester on 9-10 October.
 date:   2015-10-13 13:17:38
 author: JW
@@ -13,7 +13,7 @@ tags:
   - conference
 ---
 
-After missing out on [ODCamp](http://odcamp.org.uk/) 1 which was held in Winchester earlier in the year, I was looking forward to seeing what was in store for those attending the second. A [storify summary of ODCamp1](https://storify.com/RnROrganisation/odcamp-in-pics) had me excited for the content of the sessions that would be held, all with some kind of focus on Open Data, this time based in Manchester.
+After missing out on ODCamp1 which was held in Winchester earlier in the year, I was looking forward to seeing what was in store for those attending the second. A [storify summary of ODCamp1](https://storify.com/RnROrganisation/odcamp-in-pics) had me excited for the content of the sessions that would be held, all with some kind of focus on Open Data, this time based in Manchester.
 
 ODCamp is an unconference - the venue, organisation and promotion are handled by the ODCamp team, and then the sessions are decided at the beginning of each day by any attendee lining up to quickly pitch what their session could entail. After each pitch a show of hands helps the organisers decide on what kind of space would be needed for the session - and very quickly the schedule is arranged for the day.
 
