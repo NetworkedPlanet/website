@@ -17,12 +17,11 @@ After missing out on ODCamp1 which was held in Winchester earlier in the year, I
 
 ODCamp is an unconference - the venue, organisation and promotion are handled by the ODCamp team, and then the sessions are decided at the beginning of each day by any attendee lining up to quickly pitch what their session could entail. After each pitch a show of hands helps the organisers decide on what kind of space would be needed for the session - and very quickly the schedule is arranged for the day.
 
-BOARD IMAGE 
-
+![Day 1 session schedule]({{page.imgdir}}odc_board_day1.jpg){:height="300px" width="250px" .img-medium .img-responsive .center-block .bordered-image}
 
 Instantly I had a problem - I wanted to go to all of them! But short of waiting til nobody was looking and rearranging the post-it notes (an idea I quickly abandoned as too risky to escape unnoticed), I had to make some tough choices.
 
-Instead of attempting to summarise every session I went to (tempting, but this post would expand into thousands of words) just write about a few of my personal highlights (spoiler: I thought it was FANTASTIC) and urge you to stay up to date with the ODCamp team to get news about any future events.
+Instead of attempting to summarise every session I went to (tempting, but this post would expand into thousands of words) just write about a few of my personal highlights (spoiler: I thought it was FANTASTIC) and urge you to [stay up to date with the ODCamp team](http://odcamp.org.uk/contact-us/) for news about future events.
 
 ### Something for everyone
 
@@ -31,11 +30,15 @@ Attendees came from all kinds of different backgrounds, techies and non-techies 
 ### Drawnalism
 Matt from [Drawnalism](http://drawnalism.com/) was live recording sessions as large illustrations which were not only incredibly impressive to see happening and check out after a session, but I also knew just how valuable they would be after the event. It was seeing the illustrations from the last ODCamp that gave me such a clear idea of exactly what went on during the sessions, and after seeing them I’d instantly registered to not miss out on the next event. I know that sounds like a massive plug, but so be it, you cannot help but be impressed after turning around after an hour’s worth of lecture and/or dicussion to find the most salient points distilled and and then presented in a glorious hand illustrated info-graphic. Respect.
 
-![Animated gif of the seagulls from Finding Nemo standing on a rock in the sea all shouting "Mine!"]({{page.imgdir}}seagulls_mine.gif){: .img-medium .center-block .img-responsive}
+<div style="max-width:820px" class="center-block">
+	
+<p><img src="/assets/images/blog/odc_dr_gov.jpg" alt="Drawnalism illustration of the talk given by Director of Data from the Cabinet Office" height="300px" width="250px" class="img-medium img-responsive bordered-image pull-left" style="margin-right:20px" /></p>
 
-DRAWNALISM IMG 1
-DRAWNALISM IMG 2
-DRAWNALISM IMG 3
+<p><img src="/assets/images/blog/odc_dr_youth.jpg" alt="Drawnalism illustration of discussion around engaging youth with Open Data" height="300px" width="250px" class="img-medium img-responsive bordered-image pull-left" style="margin-right:20px" /></p>
+
+<p><img src="/assets/images/blog/odc_dr_defra.jpg" alt="Drawnalism illustration of Open Data at DEFRA" height="300px" width="250px" class="img-medium img-responsive bordered-image" /></p>
+
+</div>
 
 ### Making Open Data Suck Less
 
@@ -51,24 +54,15 @@ John Murray’s session on spatial analysis queries led into a interesting discu
 
 For an event targeted specifically at Open Data enthusiasts, I was surprised to find that there were very few that were comfortable with Linked Data. Some were unaware of it entirely, some knew a bit about it but weren’t sure of its benefits, and others were very comfortable with the idea of it but put it to one side as if it was some kind of pipe-dream rather than a simple step onwards from CSV style tabular data. It prompted me to do a pitch myself on the second day, targeted specifically to those people who would like to have a play around with RDF, but weren’t sure how to go about doing that. I ran a quick session to use OpenRefine to convert CSV to RDF using the RDF extension to map columns to predicates, and then we had a bit of a chat around the subjects of re-using existing Linked Data vocabularies (do you *have* to? no you don’t). Fear not if you’d like me to write more on this subject, I’ve taken notes from the questions asked during that session and will do a separate blog post on that subject.
 
-### More people need to understand data
+![Drawnalism illustration zoom in: "There's a massive process of internal learning going on (and it must continue)"]({{page.imgdir}}odc_dr_learn.jpg){:height="300px" width="250px" .img-medium .img-responsive .center-block .bordered-image}
 
-((To be completed))
+The weekend-long camp concluded with a feedback session to chat about any points that particularly worked or didn’t work over the weekend. This was in keeping with the unconference ethos - the attendees come together and pitch in to build a conference on the fly. It works fantastically when done well, and hats off to the organisers for making ODCamp one of those. ODCamp3 is looking like it will be held in about six months time - [head over to ODCamp website and sign up to get updates](http://odcamp.org.uk/contact-us/).
 
+### Also check out:
 
-PIC
-
-The weekend-long camp concluded with a feedback session to chat about any points that particularly worked or didn’t work over the weekend. This was in keeping with the unconference ethos - the attendees come together and pitch in to build a conference on the fly. It works fantastically when done well, and hats off to the organisers for making ODCamp one of those. ODCamp3 is looking like it will be held in about six months time - head over to ODCamp website and sign up to get updates.
-
-Also check out:
-
-Open Data Camp 2 in pictures (via Guiseppe Sollazzo on Flickr)
-The #odcamp hashtag on twitter
-ODCamp website
-
-
-
-
+* [Open Data Camp 2 in pictures](https://www.flickr.com/photos/puntofisso/albums/72157659650939562) (via Guiseppe Sollazzo on Flickr)
+* [The #odcamp hashtag on twitter](https://twitter.com/hashtag/odcamp?vertical=default&src=hash)
+* [ODCamp website](http://odcamp.org.uk/)
 
 
 	
