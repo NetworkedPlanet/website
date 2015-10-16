@@ -9,6 +9,7 @@ excerpt: Most of the data that organisations hold will be in some form of flat d
 tags:
   - open refine
   - rdf
+  - tutorial
 ---
 Most of the data that organisations hold will be in some form of flat data, either in spreadsheets or relational databases. In order for the data to achieve either [4 or 5 star levels of Open Data][5-star] this data must be changed to not only use non-proprietary formats but it must also use URIs so that each object can be linked with other data across the World Wide Web.
 
