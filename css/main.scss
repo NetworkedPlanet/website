@@ -82,6 +82,16 @@ body {
     text-align:center;
 }
 
+/*
+ Responsive container max width limit 
+ Large devices (large desktops, 1200px and up)
+--------------------------------------------*/
+@media (min-width: 1200px) {
+  .container-fluid {
+    max-width: 980px;
+  }
+}
+
 /* Responsive text alignment
 -----------------------------------------------------*/
 .text-justify-xs {
