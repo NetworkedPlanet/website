@@ -4,28 +4,80 @@ mailchimp: true
 ---
 <!-- Intro Section -->
     <section id="intro" class="sn-section">
-        <div class="container">
-            <div class="row">
-				<div class="col-md-6">
-					<image src="assets/images/laptop.jpg" class="img-responsive center-block"/>
-				</div>
-                <div class="col-md-6 text-justify">
-					<p class="intropara lead">
-						We provide the <span class="highlight">tools</span>, <span class="highlight">knowledge</span> and <span class="highlight">experience</span> to help organisations 
-						of all sizes make the best use of the data,
-						content and knowledge that sit in disparate silos. We connect
-						people with the information they need, when they need it.
-					</p>
-					<p class="intropara lead">We are passionate advocates of <span class="highlight">Linked Open Data</span>.<br/>
-					We believe that publishing Open Data helps organisations build trust through transparency and gain leadership by publicising their knowledge.</p>
-					<p class="intropara lead">We believe that by linking Open Data we can together create a true <span class="highlight">Web of Data</span> with possibilities beyond our imagining.</p>
-					<div class="text-center">
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="#products">Products</a>
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="#services">Services</a>
+        <div class="container-fluid">
+			<div  id="intro-carousel" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#intro-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#intro-carousel" data-slide-to="1"></li>
+					<li data-target="#intro-carousel" data-slide-to="2"></li>
+					<li data-target="#intro-carousel" data-slide-to="3"></li>
+				</ol>
+				
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="/assets/images/carousel/scene00401.png" alt="Web3" class="img-responsive">
+						<div class="carousel-caption">
+							<h2><a href="#services" class="page-scroll">Unlock the potential of your data</a></h2>
+						</div>
 					</div>
-                </div>
-            </div>
-			<div class="spacer4"></div>
+					<div class="item">
+						<img src="/assets/images/carousel/scene00211.png" alt="" class="img-responsive">
+						<div class="carousel-caption">
+							<h2><a href="#services" class="page-scroll">Make your data work harder for your organisation</a></h2>
+						</div>
+					</div>
+					<div class="item">
+						<img src="/assets/images/carousel/scene00701.png" alt="" class="img-responsive">
+						<div class="carousel-caption">
+							<h2><a href="#services" class="page-scroll">Connect to the Web of Data</a></h2>
+						</div>
+					</div>
+					<div class="item">
+						<img src="/assets/images/carousel/scene00851.png" alt="" class="img-responsive">
+						<div class="carousel-caption">
+							<h2><a href="#services" class="page-scroll">Choose what and when to publish</a></h2>
+						</div>
+					</div>
+				</div>
+				
+				<a class="left carousel-control" href="#intro-carousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#intro-carousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<div class="spacer"></div>
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EbpRofMqzF0"></iframe>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="visible-sm-block" style="height:20px"></div>
+					<div class="visible-md-block" style="height:50px"></div>
+					<div class="visible-lg-block" style="height:80px"></div>
+					<div>
+						<p class="intropara lead">
+							We provide the <span class="highlight">tools, knowledge and experience</span>
+							to help organisations 
+							of all sizes make the best use of their data,
+							content and knowledge. We connect
+							people with the information they need, when they need it.
+						</p>
+						<p class="intropara lead visible-lg-block">We are passionate advocates of <span class="highlight">Linked Open Data</span>.<br/>
+					We believe that publishing Open Data helps organisations build trust through transparency and gain leadership by publicising their knowledge.</p>
+						<div class="text-center">
+							<a class="btn page-scroll btn-lg btn-primary text-center" href="#products">Products</a>
+							<a class="btn page-scroll btn-lg btn-primary text-center" href="#services">Services</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="spacer"></div>
         </div>
     </section>
 
@@ -60,7 +112,7 @@ both Linked Data applications and generic applications that require a flexible s
 environment. BrightstarDB was created by the founders of NetworkedPlanet and is now an open-source project.</p>
                 <p><a class="btn btn-primary" href="http://brightstardb.com/">Visit the BrightstarDB site &raquo;</a></p>
             </div>
-		</div>
+		</div>	
 		<hr/>
 		<div class="row row-centered">
             <div class="col-md-4">
@@ -90,51 +142,46 @@ environment. BrightstarDB was created by the founders of NetworkedPlanet and is 
 	<!-- Services -->
 	<section id="services" class="sn-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-justify-md">
-					<h2>Consultancy</h2>
-					<p class="lead">
-						NetworkedPlanet can provide your organization with the help and support necessary to kick-start the process 
-						of building a domain knowledge model and creating linked data.</p>
-					<p>Our approach focuses on getting the details about the domain and the source data out of the heads of the subject matter experts and into a form that can be expressed visually and clearly documented as a first step to building a knowledge structure or planning a data extraction and transform. This approach is independent of any final implementation (whether it is with NetworkedPlanet’s tools or with other tools).</p>
-					<p>We can also help with the technical aspects of implementation using our products, giving you the advice and support you need to make the best use of them in your projects. We can also develop bespoke solutions and integrations that meet your needs.</p>
-
-					<div class="spacer"></div>
-
-					<h2>Training</h2>
-					<p class="lead">NetworkedPlanet provides a number of basic training courses that can be held on your premises.</p>
-					
-					<h3> Linked Data and RDF </h3>
-					<p>We provide a number of different courses on the fundamentals of RDF and its application in publishing Linked Data.
-					These courses cover topics such as the RDF model; RDF Schema; OWL Ontologies; querying RDF with SPARQL; and publishing Linked Data with RDF; in theory and in practice</p>
-
-					<h3>Topic Maps Training</h3>
-					<p>We provide courses on the theory and practice of topic maps, covering aspects such as: the core topic map model;
-					how to make topic maps using Web3; topic map patterns and anti-patterns; building topic maps for future extensibility; and querying topic maps with SPARQL.</p>
-
-					<h3>Product Training</h3>
-					<p>We can also provide standard and bespoke training courses for any of our products.</p>
-
-					<p class="text-center"><a href="#contact" class="page-scroll btn btn-primary btn-lg">Contact Us</a></p>
-					
-					<h2>Webinars</h2>
-					<p class="lead">Join one of our FREE 1-hour webinars to learn more about Linked Data technologies</p>
-					<ul vocab="http://schema.org/">
-						<li typeof="Event">
-							<meta property="name" content="Introduction to RDF and SPARQL">
-							<meta property="startDate" content="2015-09-29T13:00:00Z">
-							<meta property="duration" content="1H">
-								Introduction to RDF and SPARQL - 29th September 14:00-15:00 BST
-						</li>
-						<li typeof="Event">
-							<meta property="name" content="Introduction to Linked Data">
-							<meta property="startDate" content="2015-10-15T13:00:00Z">
-							<meta property="duration" content="1H">
-								Introduction to Linked Data - 15th October 14:00-15:00 BST
-						</li>
-						<li>More coming soon...with topics such as SPARQL, OpenRefine and more. <a href="https://twitter.com/nwplanet">Follow us on Twitter</a> or sign-up for the <a href="#newsletter">newsletter</a> to be notified.</li>
-					</ul>
+		`	<div class="row">
+				<div class="col-lg-12">
+					<h1>What Can We Do For You?</h1>
 				</div>
+			</div>
+			<div class="row">
+					<p class="lead">
+					Many organisations collect and store a lot of information without using it to its full potential. Most of these organisations are also aware of this, but are unsure what to do about it. At first glance it can seem like a massive undertaking!
+					</p>
+					<p class="lead text-center">Networked Planet helps you through this process.</p>
+				<div class="col-xs-6 col-lg-3">
+					<div class="placeholder"></div>
+					<h2>Identify</h2>
+					<p class="text-justify-lg">First, we chat with you about what your requirements are, and what type of data you hold. We help you identify which parts of your data can be shared and which would be most useful to share.</p>
+				</div>					
+				<div class="col-xs-6 col-lg-3">
+					<div class="placeholder"></div>
+					<h2>Structure</h2>
+					<p class="text-justify-lg">To be effectively used, data needs to be properly structured; we help you look at your existing stores of data, how it should be structured, and what (if any) changes can be made to the way you gather that information that will streamline the process in the future.</p>
+				</div>					
+				<div class="col-xs-6 col-lg-3">
+					<div class="placeholder"></div>
+					<h2>Publish</h2>
+					<p class="text-justify-lg">Your newly structured data can then be published internally, making the data accessible to everyone in your organisation enabling new insights and encouraging innovation. But it doesn’t have to stop there - publishing one dataset inevitably leads to requests for another one to be published too. We can ensure that you develop skills internally to maintain and expand your published datasets.</p>
+				</div>					
+				<div class="col-xs-6 col-lg-3">
+					<div class="placeholder"></div>
+					<h2>Connect</h2>
+					<p class="text-justify-lg">For super awesome über coolness, you can choose to publish Linked Open Data, bringing developers, researchers, data scientists and journalists to your data portal to reuse and combine your data with other publicly available data sets, inspiring ideas and enabling new discoveries that would not have been possible before.</p>
+				</div>
+			</div>
+					<div class="well">
+						<p class="lead">
+					Whether you want a data visualisation project to draw public attention to some data you hold, create an internal data portal or publish Linked Open Data - we can help you get it right first time.
+						</p>
+						<p class="lead text-center-lg">Get in touch with us to start the conversation and see how best we can help you.</p>
+						
+						<p class="text-center"><a class="btn btn-primary btn-lg page-scroll" href="#contact">Contact Us</a></p>
+					</div>
+					
 			</div>
 		</div>
 	</section>
