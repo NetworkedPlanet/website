@@ -5,6 +5,7 @@ tags:
   - odi
   - open data
   - video
+comments: true
 ---
 
 While we are great fans of Open Data, it is just one part of a spectrum from data that

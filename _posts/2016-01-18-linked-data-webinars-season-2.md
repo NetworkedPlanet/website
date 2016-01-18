@@ -7,6 +7,7 @@ tags:
   - rdf
   - sparql
   - linked data
+comments: true
 ---
 
 We are pleased to announce our second series of training webinars. Following on from the couple of successful webinars we presented
