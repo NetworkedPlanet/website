@@ -4,6 +4,9 @@ title: NetworkedPlanet Webinars
 excerpt: We are offering a series of FREE 1 hour webinar on Linked Data and related topics. Read on for details and the sign-up links!
 tags:
   - webinar
+  - rdf
+  - sparql
+  - linked data
 ---
 
 We are pleased to announce our second series of training webinars. Following on from the couple of successful webinars we presented
