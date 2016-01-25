@@ -6,6 +6,8 @@ tags:
   - open data
   - video
 comments: true
+icon: /assets/images/blog/data_padlock64.png
+iconalt: A padlock with the word Data over it
 ---
 
 While we are great fans of Open Data, it is just one part of a spectrum from data that
