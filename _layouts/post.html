@@ -12,6 +12,9 @@ layout: default
   </header>
 
   <article class="post-content">
+	{% if page.image %}
+	<img src="{{ page.image }}" class="img-rounded pull-left header-image" alt="{{ page.imagealt }}" />
+	{% endif %}
     {{ content }}
   </article>
 
