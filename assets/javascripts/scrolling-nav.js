@@ -11,11 +11,19 @@ $(window).scroll(function() {
 $(function() {
     $('a.page-scroll').bind('click', function(event) {
         var $anchor = $(this);
-		ga('set', 'page', $anchor.attr('href'));
-		ga('send', 'pageview');
+		var href = $anchor.attr('href');
+		//ga('set', 'page', href);
+		//ga('send', 'pageview');
         $('html, body').stop().animate({
             scrollTop: $($anchor.attr('href')).offset().top
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
 });
+
+
+$('#navbar').on('activate.bs.scrollspy', function (event) {
+	var href = $(this).find("li.active a").attr("href");
+	ga('set', 'page', href);
+	ga('send', 'pageview');
+})
