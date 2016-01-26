@@ -41,7 +41,7 @@ Linked Data either internally or externally.
 <div typeof="Event">
 <span property="description">
 The <a href="https://www.eventbrite.co.uk/e/webinar-sparql-101-tickets-20857308772" property="url"><span property="name">SPARQL 101</span></a> webinar 
-(<meta property="startDate" content="2016-03-03T14:00:00Z">3rd March</meta>, <meta property="duration" content="1H">14:00-15:00 GMT</meta>) focusses on the SPARQL
+(<meta property="startDate" content="2016-03-10T14:00:00Z">10th March</meta>, <meta property="duration" content="1H">14:00-15:00 GMT</meta>) focusses on the SPARQL
 query language for RDF. Building on what was learnt in the introduction webinar, this webinar goes into more detail about the query
 language and shows some examples of how to use SPARQL to explore datasets, extract salient information from them and create reports
 by aggregating data.
