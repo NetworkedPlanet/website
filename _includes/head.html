@@ -7,16 +7,16 @@
     <meta name="description" content="{{ site.description }}">
 	
 	<!-- Twitter Summary Card  -->
-	{% if page.excerpt and page.image %}
+	{% if page.excerpt %}
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="{{ site.twitter }}" />
 	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta name="twitter:description" content="{{ page.excerpt }}" />
-	<meta nane="twitter:image" content="{{ site.url }}{{ page.image }}" />
+	<meta nane="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.twitter_image }}{% endif %}" />
 	<!-- OpenGraph summary -->
 	<meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 	<meta name="og:description" content="{{ page.excerpt }}" />
-	<meta name="og:image" content="{{ page.image }}" />
+	<meta name="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.twitter_image }}{% endif %}" />
 	{% endif %}
 
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ '/feed/' | prepend: site.url }}" />
