@@ -92,51 +92,53 @@ mailchimp: true
                     <h1>Our Products</h1>
                 </div>
             </div>
-			<div class="row">
+			<div class="row"  vocab="http://schema.org/" typeof="Product">
             <div class="col-md-6">
-                <img src="/assets/images/dp1.png" class="img-responsive center-block"/>
+                <img property="image" src="/assets/images/dp1.png" class="img-responsive center-block" alt="DataPlatform logo"/>
             </div>
             <div class="col-md-6 text-justify-md text-center-sm">
-                <h2 class="text-center">Data Platform</h2>
+                <h2 class="text-center" property="name">Data Platform</h2>
+                <div property="description">
                 <p>Networked Planet’s Data Platform offers an easy-to-use web platform for organisations of any size to publish data for use on the Semantic Web.</p>
                 <p>Using existing Semantic Web standards, the Data Platform makes it simple to manage and host your data and provides an themeable interface for users to browse hosted datasets.</p>
-                <p class="text-center"><a class="btn btn-primary" href="http://dataplatform.co.uk/">Visit the Data Platform site &raquo;</a></p>
+                </div>
+                <p class="text-center"><a class="btn btn-primary" href="http://dataplatform.co.uk/" rel="mainEntityOfPage">Visit the Data Platform site &raquo;</a></p>
             </div>
         </div>
         
-        <div class="row">
+        <div class="row" vocab="http://schema.org/" typeof="Product">
             <div class="col-md-6">
-                <img src="/assets/images/brightstardb1.png" class="img-responsive center-block"/>
+                <img property="image" src="/assets/images/brightstardb1.png" class="img-responsive center-block" alt="BrightstarDB logo"/>
 			</div>
 			<div class="col-md-6">
-                <h2>BrightstarDB</h2>
-                <p>BrightstarDB is a native .NET RDF triple store with some unique features that make it the ideal platform for developing
+                <h2 property="name">BrightstarDB</h2>
+                <p property="description">BrightstarDB is a native .NET RDF triple store with some unique features that make it the ideal platform for developing
 both Linked Data applications and generic applications that require a flexible schema-free approach to storage in a .NET
 environment. BrightstarDB was created by the founders of NetworkedPlanet and is now an open-source project.</p>
-                <p><a class="btn btn-primary" href="http://brightstardb.com/">Visit the BrightstarDB site &raquo;</a></p>
+                <p><a class="btn btn-primary" href="http://brightstardb.com/" rel="mainEntityOfPage">Visit the BrightstarDB site &raquo;</a></p>
             </div>
 		</div>	
 		<hr/>
-		<div class="row row-centered">
-            <div class="col-md-4">
-                <img src="/assets/images/web31.png" class="img-responsive center-block"/>
-                <h2>Web3 Platform</h2>
-                <p>The Networked Planet Web3 Platform provides a complete solution for managing and publishing <a href="/glossary/topic-maps/">ISO Topic Maps</a>. Web3 makes it easy to create domain knowledge models complete with semantic links between topics and provides a simple browser-based interface for adding and editing topics and their relationships.</p>
-                <p><a class="btn btn-default" href="/web3/" role="button">Read More &raquo;</a></p>
+		<div class="row row-centered" vocab="http://schema.org/">
+            <div class="col-md-4"  typeof="Product">
+                <img property="image" src="/assets/images/web31.png" class="img-responsive center-block" alt="Web3 Platform logo"/>
+                <h2 property="name">Web3 Platform</h2>
+                <p property="description">The Networked Planet Web3 Platform provides a complete solution for managing and publishing <a href="/glossary/topic-maps/">ISO Topic Maps</a>. Web3 makes it easy to create domain knowledge models complete with semantic links between topics and provides a simple browser-based interface for adding and editing topics and their relationships.</p>
+                <p><a class="btn btn-default" href="/web3/" role="button" rel="mainEntityOfPage">Read More &raquo;</a></p>
             </div>
         
-			<div class="col-md-4">
-				<img src="/assets/images/cfs1.png" class="img-responsive center-block"/>
-				<h2>Concepts for SharePoint</h2>
-				<p>Concepts for SharePoint makes it possible to integrate a complex domain knowledge model into the standard SharePoint Managed Metadata System (MMS). Users can navigate via Concept Pages, that bring relevant content directly to them without requiring them to search.</p>
-				<p><a class="btn btn-default" href="/concepts-for-sharepoint/" role="button">Read More &raquo;</a></p>
+			<div class="col-md-4" typeof="Product">
+				<img property="image" src="/assets/images/cfs1.png" class="img-responsive center-block" alt="Concepts for SharePoint logo"/>
+				<h2 property="name">Concepts for SharePoint</h2>
+				<p property="description">Concepts for SharePoint makes it possible to integrate a complex domain knowledge model into the standard SharePoint Managed Metadata System (MMS). Users can navigate via Concept Pages, that bring relevant content directly to them without requiring them to search.</p>
+				<p><a class="btn btn-default" href="/concepts-for-sharepoint/" role="button" rel="mainEntityOfPage">Read More &raquo;</a></p>
 			</div>
 			
-			<div class="col-md-4">
-				<img src="/assets/images/cfe1.png" class="img-responsive center-block"/>
-				<h2>Concepts for EPiServer</h2>
-				<p>Like many web content management systems, EPiServer manages the pages of a site in a strict hierarchy with limited tagging support for managing other groupings of pages. With Concepts for EPiServer it is possible to use an existing domain knowledge model to structure the content of and access to a web site; or as a way to better index and organize existing site content.</p>
-				<p><a class="btn btn-default" href="/concepts-for-episerver" role="button">Read More &raquo;</a></p>
+			<div class="col-md-4" typeof="Product">
+				<img property="image" src="/assets/images/cfe1.png" class="img-responsive center-block" alt="Concepts for EPiServer logo"/>
+				<h2 property="name">Concepts for EPiServer</h2>
+				<p property="description">Like many web content management systems, EPiServer manages the pages of a site in a strict hierarchy with limited tagging support for managing other groupings of pages. With Concepts for EPiServer it is possible to use an existing domain knowledge model to structure the content of and access to a web site; or as a way to better index and organize existing site content.</p>
+				<p><a class="btn btn-default" href="/concepts-for-episerver/" role="button" rel="mainEntityOfPage">Read More &raquo;</a></p>
 			</div>
 		</div>
         </div>
@@ -344,3 +346,27 @@ environment. BrightstarDB was created by the founders of NetworkedPlanet and is 
 			
 		</div>
     </section>
+    
+    <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "url": "http://networkedplanet.com/",
+        "logo": "http://networkedplanet.com/assets/images/Networked_Planet_Full_Colour.png",
+        "contactPoint": [{
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "support@networkedplanet.com",
+            "telephone": "+44 1865 240439"
+        },
+        {
+            "@type": "ContactPoint",
+            "contactType": "sales",
+            "email": "contact@networkedplanet.com",
+            "telephone": "+44 1865 240439"
+        }],
+        "sameAs": [
+            "https://twitter.com/nwplanet"
+        ]
+    }
+    </script>
