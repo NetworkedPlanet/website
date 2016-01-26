@@ -1,10 +1,11 @@
 # Site settings
 title: NetworkedPlanet
 email: contact@networkedplanet.com
-description: > # this means to ignore newlines until "baseurl:"
-  Data integration and metadata management solutions.
+description: Experts in Linked and Open Data Publishing
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://networkedplanet.com" # the base hostname & protocol for your site
+twitter: "@nwplanet"
+twitter_image: http://networkedplanet.com/assets/images/np-220px.png
 
 # Build settings
 markdown: kramdown

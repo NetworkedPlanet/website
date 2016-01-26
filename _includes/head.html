@@ -5,6 +5,19 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+	
+	<!-- Twitter Summary Card  -->
+	{% if page.excerpt and page.image %}
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="{{ site.twitter }}" />
+	<meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta name="twitter:description" content="{{ page.excerpt }}" />
+	<meta nane="twitter:image" content="{{ site.url }}{{ page.image }}" />
+	<!-- OpenGraph summary -->
+	<meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta name="og:description" content="{{ page.excerpt }}" />
+	<meta name="og:image" content="{{ page.image }}" />
+	{% endif %}
 
     <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="{{ '/feed/' | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="NetworkedPlanet &raquo; Feed" href="{{ '/feed/' | prepend: site.url }}" />
@@ -23,8 +36,6 @@
 		<link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 		<style type="text/css">
 			#mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-			/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-			   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 		</style>
 	{% endif %}
 </head>
