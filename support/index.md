@@ -1,6 +1,7 @@
 ---
 layout: page
-title: Support
+title: Product Support
+description: Support, upgrades and product documentation
 ---
 
 All customers with a current support contract can access NetworkedPlanet support either through our support site or by sending an email to [support@networkedplanet.com](mailto:support@networkedplanet.com). When reporting an issue please be sure to tell us which product(s) and which versions you currently have installed.

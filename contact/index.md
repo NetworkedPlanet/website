@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+description: Sales and support contact information for NetworkedPlanet
 ---
 
 ## Contact Details ##
