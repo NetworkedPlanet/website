@@ -20,6 +20,10 @@ layout: default
 
   <div class="row spacer2">&nbsp;</div>
   
+  {% include socialshare.html %}
+  
+  <div class="row spacer2">&nbsp;</div>
+  
   <hr/>
   <nav>
     <p>Filed under: {% for tag in page.tags | sort %} <a href="{{site.tag_dir}}/{{ tag | slugify }}/">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
