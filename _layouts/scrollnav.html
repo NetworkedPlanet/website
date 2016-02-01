@@ -23,6 +23,12 @@
     $(document).ready(function() {
         $.cookieCuttr({cookieDeclineButton: true});
     });
+	$(window).on('activate.bs.scrollspy', function(e){
+		var matchLink = $("a[href^='#']", e.target);
+		if (matchLink.length) {
+			history.replaceState({}, "", matchLink.attr("href"));
+		}
+	});
     
     if (jQuery.cookie('cc_cookie_decline') == "cc_cookie_decline") {
         // do nothing
