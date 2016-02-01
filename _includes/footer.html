@@ -52,4 +52,19 @@
 		
     }
 </script>
-
+<script>
+/**
+* Function that tracks a click on an outbound link in Google Analytics.
+* Example of use:
+* <a href="http://www.example.com" onclick="trackOutboundLink('http://www.example.com'); return false;">Check out example.com</a>
+*/
+var trackOutboundLink = function(url) {
+	// Only track if the cookie was not declined
+	if (ga){
+	    ga('send', 'event', 'outbound', 'click', url, {
+		   'transport': 'beacon',
+		   'hitCallback': function(){document.location = url;}
+	    });
+   }
+}
+</script>
