@@ -1,0 +1,9 @@
+.reveal-open {
+	overflow: auto;
+	height: auto;
+}
+
+.reveal-closed {
+	overflow: hidden;
+	width: 240px;
+}
