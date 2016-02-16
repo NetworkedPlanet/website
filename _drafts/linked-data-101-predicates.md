@@ -102,7 +102,7 @@ Where to start?
 
 It's all very well for me to talk about how I chose to use a couple of popular vocabularies and then plonked them in my data, but how are you going to know about these vocabularies in the first place, and what should influence your decision on which to use? Fear not, there are websites out there that help you find existing published vocabularies, such as [LOV](http://lov.okfn.org/dataset/lov), you can reach out to the publishers of open data that you are consuming (such as local or national government) and ask them about their preferred vocabularies, and of course we would also suggest [getting in touch with your friendly linked data experts](http://networkedplanet.com/#contact) to ask for advice too (yes, that is indeed a link to our contact detail page, it had to be done!). 
 
-Can't find a shared vocabulary that matches your needs? Consider taking your private vocabulary and publishing it as open data. That's exactly what the Ordnance Survey company chose to do, why wait for someone else to do it when you can lead the field?
+Can't find a shared vocabulary that matches your needs? Consider taking your private vocabulary and publishing it as open data. That's exactly what the Ordnance Survey chose to do, why wait for someone else to do it when you can lead the field?
 
 ----------
 
