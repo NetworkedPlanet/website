@@ -2,7 +2,7 @@
 layout: post
 title: Linked Data 101 - what's a predicate?
 tags:
-  - 101 series
+  - LD101 series
   - linked data
   - predicates
 comments: true
@@ -12,6 +12,15 @@ author: Jen
 ---
 
 In the first blog post in this series on Linked Data 101, we took a look at [the use of URIs in linked data](). We left off just as we were getting to a really interesting part - predicates! If you've not read part 1 yet I recommend you [do that first]().
+
+Whilst it's perfectly possible to use local "made-up" URIs as my predicates (and it's perfectly possible to do that as explained about identifiers in the [last blog post]()), in the Linked Data web you can choose to use predicates from a published vocabulary to show that your data contains information regarding the same concepts as another dataset. This is powerful stuff!
+
+Ever since the initial vision of the World Wide Web was dreamt of, the idea of being able to provide context and meaning to the information published has been part of that plan. Whilst it was laid to one side for the initial versions of the web, that goal has never been forgotten. When we look at two disparate pieces of information on the web, how do we decide that the two pieces have overlapping meanings, perhaps they are talking about different subjects, but they contain information relevant to each other. Currently we need to do that process manually, or have extremely complex linguistic programs to try and do the work for us. 
+
+With linked data (or as I like to think about it - *linkable* data) we explicitly describe the link between a Thing and its properties with a unique identifier.
+
+
+
 
 Let's look again at some simple tabular data and how it would translate into triples. Let's use a few dummy events:
 
