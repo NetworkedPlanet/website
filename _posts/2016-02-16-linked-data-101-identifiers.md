@@ -2,7 +2,7 @@
 layout: post
 title: Linked Data 101 - What's with all the URIs?
 tags:
-  - 101 series
+  - LD101 series
   - linked data
   - identifiers
 comments: true
@@ -58,7 +58,7 @@ In this example the triple would look something like:
 The way we are writing triples here, the three parts are separated from each other by spaces and angle-brackets (<>) are used to wrap URI identifiers. You will also see that the value at the end of the line ("249") is followed by a double-caret (^^) and another URI - this last URI is specifying the **data type** of the value. In effect saying that the string "249" should be processed as an integer. This is an example of a triple with a literal (in this case the literal is the integer value 249). We can also create triples that have a URI as the object:
 
 <pre>
-&lt;http://data.example.org/products/LD12940FV&gt; &lt;http://data.example.org/manufacturer&gt; &lt;http://contoso.com/#company&gt;
+&lt;http://data.example.org/products/LD12955AD&gt; &lt;http://data.example.org/manufacturer&gt; &lt;http://contoso.com/#company&gt;
 </pre>
 
 We can see why URIs must be used as subjects, and *can* be objects, what about the predicates? Why not just use text labels to describe properties of a resource such as "stock level" or "manufacturer"? Well, without using URIs we would miss out on the core power of the Web of Data - a way of being able to embed our data with the information that we are talking about the same *concepts* that another data publisher is describing in *their* data. 

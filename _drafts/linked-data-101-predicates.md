@@ -11,11 +11,11 @@ excerpt: In the second of our Linked Data 101 series, we'll talk a bit about pre
 author: Jen
 ---
 
-In the first blog post in this series on Linked Data 101, we took a look at [the use of URIs in linked data](/blog/linked-data-101-uris.html). We left off just as we were getting to a really interesting part - predicates!
+In the first blog post in this series on Linked Data 101, we took a look at [the use of URIs in linked data](/blog/2016/02/16/linked-data-101-identifiers.html). We left off just as we were getting to a really interesting part - predicates!
 
 Ever since the initial vision of the World Wide Web was dreamt of, the idea of being able to provide context and meaning to the information published has been part of that plan. Whilst it was laid to one side for the initial versions of the web, that goal has never been forgotten. When we look at two disparate pieces of information on the web, how do we decide that the two pieces have overlapping meanings, perhaps they are talking about different subjects, but they contain information relevant to each other. Currently we need to do that process manually, or have extremely complex linguistic programs to try and do the work for us. 
 
-With linked data (or as I like to think about it - *linkable* data) we explicitly describe the link between a Thing and its properties with a unique identifier, and what unique identifiers do we use on the web? You guessed it - [URIs](/blog/linked-data-101-uris.html). Why the need for identifiers? Well, let's say I have some information that contains details about **Wards**, depending on the *context* that information could be about rooms in a hospital, a division of a geographical area governed by councillors, or even a young person who has been appointed a guardian by a court. By using URI predicates we have a way of making these differences in meaning explicit.
+With linked data (or as I like to think about it - *linkable* data) we explicitly describe the link between a Thing and its properties with a unique identifier, and what unique identifiers do we use on the web? You guessed it - [URIs](/blog/2016/02/16/linked-data-101-identifiers.html). Why the need for identifiers? Well, let's say I have some information that contains details about **Wards**, depending on the *context* that information could be about rooms in a hospital, a division of a geographical area governed by councillors, or even a young person who has been appointed a guardian by a court. By using URI predicates we have a way of making these differences in meaning explicit.
 
 Let's look again at some simple tabular data and how it would translate into triples. 
 
