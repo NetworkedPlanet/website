@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Linked Data 101 - what's a predicate?
+title: Linked Data 101 - What's a predicate?
 tags:
   - LD101 series
   - linked data
@@ -11,18 +11,13 @@ excerpt: In the second of our Linked Data 101 series, we'll talk a bit about pre
 author: Jen
 ---
 
-In the first blog post in this series on Linked Data 101, we took a look at [the use of URIs in linked data](). We left off just as we were getting to a really interesting part - predicates! If you've not read part 1 yet I recommend you [do that first]().
-
-Whilst it's perfectly possible to use local "made-up" URIs as my predicates (and it's perfectly possible to do that as explained about identifiers in the [last blog post]()), in the Linked Data web you can choose to use predicates from a published vocabulary to show that your data contains information regarding the same concepts as another dataset. This is powerful stuff!
+In the first blog post in this series on Linked Data 101, we took a look at [the use of URIs in linked data](/blog/linked-data-101-uris.html). We left off just as we were getting to a really interesting part - predicates!
 
 Ever since the initial vision of the World Wide Web was dreamt of, the idea of being able to provide context and meaning to the information published has been part of that plan. Whilst it was laid to one side for the initial versions of the web, that goal has never been forgotten. When we look at two disparate pieces of information on the web, how do we decide that the two pieces have overlapping meanings, perhaps they are talking about different subjects, but they contain information relevant to each other. Currently we need to do that process manually, or have extremely complex linguistic programs to try and do the work for us. 
 
-With linked data (or as I like to think about it - *linkable* data) we explicitly describe the link between a Thing and its properties with a unique identifier.
+With linked data (or as I like to think about it - *linkable* data) we explicitly describe the link between a Thing and its properties with a unique identifier, and what unique identifiers do we use on the web? You guessed it - [URIs](/blog/linked-data-101-uris.html). Why the need for identifiers? Well, let's say I have some information that contains details about **Wards**, depending on the *context* that information could be about rooms in a hospital, a division of a geographical area governed by councillors, or even a young person who has been appointed a guardian by a court. By using URI predicates we have a way of making these differences in meaning explicit.
 
-
-
-
-Let's look again at some simple tabular data and how it would translate into triples. Let's use a few dummy events:
+Let's look again at some simple tabular data and how it would translate into triples. 
 
 <pre>
 ID,Event,Location - Lat,Location - Long,Date & Time
@@ -50,8 +45,7 @@ In RDF the triples would look something like this:
 
 As it is the data would be fine to publish on your internal or external data portal (using your portal's address rather than example.org of course!). It's 4 star data, meaning that not only is it in a non-proprietary format but that you've used URIs to denote your resources. Your data is ***linkable***, regardless of whether you choose to share it outside of your organisation. Rather than concentrating on linked data being about whether or not you choose to publish publicly, think of how you can make data that's already out there easier to consume, and how easy it will be to merge it with your own data.
 
-Published Vocabularies
-----
+
 A vocabulary collects together sets of predicates that are useful in describing specific types of things (they can also contain more information about describing types and how types relate to one another but that's beyond the scope of this article). 
 
 The most used vocabulary at this point in time is the [Dublin Core vocabulary](http://semanticweb.org/wiki/Dublin_Core). This is a vocabulary published by the Dublin Core Metadata Initiative used to describe information about documents - such as Title, Description, Creator, and so on - so you can see why it would be such a well used vocabulary. Another useful vocabulary is from [Geonames](http://www.geonames.org/ontology/documentation.html), containing properties for describing places such as Name, Alternative Name, Population and suchlike. It's worthwhile to note that while Geonames has many properties for describing places, for latitude and longitude it reuses the [W3C Basic Geo vocabulary](https://www.w3.org/2003/01/geo/). 
