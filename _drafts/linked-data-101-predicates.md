@@ -20,11 +20,14 @@ Yesterday we took a look at [the use of URIs in linked data](/blog/2016/02/16/li
 
 When we look at two disparate sources of information on the web, how do we decide that the two pieces have overlapping meanings, even when they are talking about different subjects, how do we know they contain information relevant to each other? Currently we need to do that process manually, or have extremely complex linguistic programs to try and replicate that work for us. 
 
-Ever since the initial vision of the World Wide Web was dreamt of, the idea of being able to embed context and meaning into that published information has been part of that plan. It was put on a back-burner for the initial versions of the web, but that goal has never been forgotten. 
-
-With linked data (or as I like to think about it - *linkable* data) we use a unique identifier to explicitly describe the link between a Thing and its properties, and what unique identifiers do we use on the web? You guessed it - [URIs](/blog/2016/02/16/linked-data-101-identifiers.html). 
-
 Let's say I have some data that contains information about Wards, depending on the *context* that information could be about rooms in a hospital, a division of a geographical area governed by councillors, or even a young person who has been appointed a guardian by a court. By using unique identifiers we have a way of making these differences in meaning explicit - and these identifiers are known as predicates.
+
+Ever since the initial vision of the World Wide Web was dreamt of, the idea of being able to embed context and meaning into that published information has been part of that plan. It was put on a back-burner for the initial versions of the web, but that goal has never been forgotten. With linked data (or as I like to think of it - *linkable* data) we use a unique identifier to explicitly describe the link between a Thing and its properties, and what unique identifiers do we use on the web? You guessed it - [URIs](/blog/2016/02/16/linked-data-101-identifiers.html). 
+
+> Many people see linked data as a subsequent step to open data - **this could not be further from the truth**
+
+Rather than focus on how you plan to *publish* your data - think of how you need to *use* your data. Linked data makes it easier to consume external linked open datasets as well as merge and share data across departments whilst staying private to your organisation, making it easier to spot trends and perform data analysis.
+
 
 Building your vocabulary
 -----
@@ -59,10 +62,6 @@ For my predicates I've chosen descriptive URIs much in the same way that I'd cho
 </pre>
 
 As it is the data would be fine to publish on your internal or external data portal (using your portal's address rather than example.org of course!). It's 4 star data, meaning that not only is it in a non-proprietary format but that you've used URIs to denote your resources. Your data is ***linkable***, regardless of whether you choose to share it outside of your organisation. 
-
-{: .alert .alert-info}
-Given the way the levels of *open* data are promoted, it's unsurprising that many people see linked data as a subsequent step that can only be taken after you've made a choice about whether to publish your data publicly - **this could not be further from the truth**! 
-Rather than focus on how you plan to *publish* your data - think of how you need to *use* your data. Linked data makes it easier to consume external linked open datasets as well as merge and share data across departments whilst staying private to your organisation, making it easier to spot trends and perform data analysis.
 
 Of course you want the set of predicates used in your data to be consistent across your organisation - and to do this you build a list of the predicates you use (along with some other useful terms) and put them in a **vocabulary** which you can choose to keep private to your organisation, or - like the raw data itself - you can choose to publish these sets of terms to a wider audience.
 
