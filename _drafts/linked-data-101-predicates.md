@@ -24,8 +24,10 @@ Let's say I have some data that contains information about Wards, depending on t
 
 Ever since the initial vision of the World Wide Web was dreamt of, the idea of being able to embed context and meaning into that published information has been part of that plan. It was put on a back-burner for the initial versions of the web, but that goal has never been forgotten. With linked data (or as I like to think of it - *linkable* data) we use a unique identifier to explicitly describe the link between a Thing and its properties, and what unique identifiers do we use on the web? You guessed it - [URIs](/blog/2016/02/16/linked-data-101-identifiers.html). 
 
-> Many people see linked data as a subsequent step to open data - **this could not be further from the truth**
+{: .well .pull-right .lead style="width:320px" }
+Many people see linked data as a subsequent step to open data - **this could not be further from the truth**
 
+Given the way the levels of *open* data are promoted, it's unsurprising that many people see linked data as a subsequent step that can only be taken after you've made a choice about whether to publish your data publicly - **this could not be further from the truth**! 
 Rather than focus on how you plan to *publish* your data - think of how you need to *use* your data. Linked data makes it easier to consume external linked open datasets as well as merge and share data across departments whilst staying private to your organisation, making it easier to spot trends and perform data analysis.
 
 
