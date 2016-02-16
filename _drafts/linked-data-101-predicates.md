@@ -13,6 +13,8 @@ author: Jen
 
 In the first blog post in this series on Linked Data 101, we took a look at [the use of URIs in linked data](). We left off just as we were getting to a really interesting part - predicates! If you've not read part 1 yet I recommend you [do that first]().
 
+Whilst it's perfectly possible to use local "made-up" URIs as my predicates (and it's perfectly possible to do that as explained about identifiers above), in the Linked Data web you can choose to use predicates from a published vocabulary to show that your data contains information regarding the same concepts as another dataset.
+
 Let's look again at some simple tabular data and how it would translate into triples. Let's use a few dummy events:
 
 <pre>

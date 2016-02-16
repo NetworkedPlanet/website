@@ -55,9 +55,9 @@ In this example the triple would look something like:
 or a similar triple that has a URI as the object:
 
 <pre>
-&lt;http://data.example.org/products/LD12955AD&gt; &lt;http://data.example.org/productPage&gt; &lt;http://shop.example.org/productsamazing-thing-you-want-to-buy&gt;
+&lt;http://data.example.org/products/LD12955AD&gt; &lt;http://data.example.org/productPage&gt; &lt;http://shop.example.org/products/lightsaber&gt;
 </pre>
 
-We can see why URIs must be used as subjects, and *can* be objects, what about the predicates? Why not just use text labels to describe properties of a resource such as "stockLevel" or "productPage"? Well, without using URIs we would miss out on the core power of the Web of Data - a way of being able to embed our data with the information that we are talking about the same concepts that another data publisher is describing. Whilst it's perfectly possible to use local "made-up" URIs as my predicates, in the Linked Data web you can choose to use predicates from a published vocabulary to show that your data contains information regarding the same concepts as another dataset.
+We can see why URIs must be used as subjects, and *can* be objects, what about the predicates? Why not just use text labels to describe properties of a resource such as "Stock Level" or "Product Page"? Well, without using URIs we would miss out on the core power of the Web of Data - a way of being able to embed our data with the information that we are talking about the same *concepts* that another data publisher is describing in *their* data. 
 
 That's exactly what the second blog post in this series is going to concentrate on - predicates and vocabularies - stay tuned!
