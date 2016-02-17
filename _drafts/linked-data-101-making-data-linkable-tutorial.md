@@ -163,7 +163,7 @@ The downloaded zip file contains RDF in three different formats: N-Triples, Turt
 ![RDF-XML Preview]({{page.imgdir}}lu-rdf.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 <p class="text-center">
-<a class="btn btn-default" href="/assets/download/.zip">
+<a class="btn btn-default" href="/assets/download/gla-allotment-locations-160217152011.zip">
 <span class="glyphicon glyphicon-download-alt">
 Download zip file
 </span>
