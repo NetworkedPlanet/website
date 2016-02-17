@@ -11,6 +11,9 @@ excerpt: Let's take a look the first stumbling block that people hit when they f
 author: Jen
 ---
 
+{: .well .text-center}
+This article is part of the [Linked Data 101 series](/blog/tags/ld101-series/)
+
 UR-WhatNow ?
 ------------
 
@@ -63,7 +66,7 @@ The way we are writing triples here, the three parts are separated from each oth
 
 We can see why URIs must be used as subjects, and *can* be objects, what about the predicates? Why not just use text labels to describe properties of a resource such as "stock level" or "manufacturer"? Well, without using URIs we would miss out on the core power of the Web of Data - a way of being able to embed our data with the information that we are talking about the same *concepts* that another data publisher is describing in *their* data. 
 
-That's exactly what the second blog post in this series is going to concentrate on - predicates and vocabularies - stay tuned!
+That's exactly what the [second blog post](/blog/2016/02/17/linked-data-101-predicates.html) in this series is going to concentrate on - predicates and vocabularies - stay tuned!
 
 {: .well .text-center}
 This article is part of the [Linked Data 101 series](/blog/tags/ld101-series/)
