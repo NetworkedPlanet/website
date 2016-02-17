@@ -9,7 +9,7 @@ tags:
   - predicates
 comments: true
 imgdir:	/assets/images/blog/linkeddata101/
-excerpt: In the third of our Linked Data 101 series, we'll use Level Up to take some CSV containing geo data and get it ready for publishing on the Web of Data
+excerpt: A walk-through in using our Level Up converter to go from 3-star to 4-star data using the theory learnt in parts 1 and 2 of this series.
 author: Jen
 ---
 
