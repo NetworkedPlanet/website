@@ -118,7 +118,7 @@ To summarise, we now have a set of predicates that looks like this:
 |   Column       |         Predicate            |    Data Type      |
 |-----------------|------------|-----------------|----------------|
 |	GLA_ID (ID)	|	http://data.contoso.com/environment/allotments/GLA_ID **	|	*default*	|
-|	Borough_Ref	|	http://data.contoso.com/environment/allotments/Location/Borough/Ref	|	*default*	|
+|	Borough_Ref	|	http://data.contoso.com/environment/allotments/Location/Borough/Ref	|	Whole number	|
 |	Name	|	http://www.w3.org/2000/01/rdf-schema#label	|	*default*	|
 |	Location	|	http://data.contoso.com/environment/allotments/Location/Description	|	Text - English (United Kingdom)	|
 |	SuppliedPostcode	|	http://data.contoso.com/environment/allotments/Location/Postcode/Supplied	|	*default*	|
