@@ -31,7 +31,7 @@ Uploading the CSV file is a simple case of either dragging the file into the upl
 Default configuration
 ----
 
-As we saw on the previous blog posts in the [series](/blog/tags/ld101-series/), the basic steps in structuring flat data into semantic data is the use of URIs as identifiers and predicates. Level Up automatically sets up the converter with a set of URIs, so if you want to skip ahead and hit "Convert your CSV" then go for it! In this post we'll look at changing those URIs to make them a bit more useful.
+As we saw on the previous blog posts in the [series](/blog/tags/ld101-series/), the basic steps in structuring flat data into semantic data is the use of URIs as identifiers and predicates. Level Up automatically sets up the converter with a set of URIs, so if you want to skip ahead and hit "Convert your CSV" then go for it! In the rest of this post we'll take a look at changing those URIs to make them a bit more useful.
 
 <div class="well text-center">
     <div class="row">
@@ -44,16 +44,19 @@ As we saw on the previous blog posts in the [series](/blog/tags/ld101-series/), 
     </div>
 </div>
 
-Looking at the prefix and identifier
+Choosing a prefix
 ----
 
-The default prefix uses our good friend, example.org, along with the uploaded filename. Whilst useful, my data portal is going to sit on an intranet for my fictional company - contoso. I'm going to tweak it a little so that my prefix becomes <code>http://data.contoso.com/environment/allotments/</code>. As I update the prefix, all the predicate URIs and the main identifier URI are updated too.
+The default prefix uses our good friend, example.org, along with the uploaded filename. Whilst useful, my data portal is going to sit on an intranet for my fictional company - contoso. I'm going to tweak it a little so that my prefix for the predicates becomes <code>http://data.contoso.com/environment/ontology/</code>. As I update the prefix, all the predicate URIs and the main identifier URI are updated too.
 
 ![Update the prefix]({{page.imgdir}}lu-prefix.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
+Which column shall I use as the identifier?
+----
+
 I can see from both the column name and the preview data at the bottom of the page that the <code>GLA_ID</code> column contains a numeric identifier for each record, so I select the "ID" radio button next to <code>GLA_ID</code> and as it's not already a valid URI I scroll down to check out what my identifier template is looking like.
 
-Currently it's using a row number tag <code>{rn}</code> which isn't required now that I have a handy ID, so I modify the identifier template to include a tag for <code>GLA_ID</code> instead. To protect myself against typos I use the <code>Tags</code> link to show me a drop down list of all available tags and select <code>GLA_ID</code>, which adds it to the end of my identifier template:
+Currently it's using the prefix <code>http://data.contoso.com/environment/ontology/</code> and a row number tag <code>{rn}</code>. Firstly, I don't want my resources to sit in the <code>/ontology/</code> namespace so I change that to <code>/allotments/</code>, given that I want to use my ID <code>GLA_ID</code> I edit the template to include a tag for <code>GLA_ID</code> instead. To protect myself against typos I use the <code>Tags</code> link to show me a drop down list of all available tags and select <code>GLA_ID</code>, which adds it to the end of my identifier template:
 
 ![Update the identifier template]({{page.imgdir}}lu-identifiertemplate.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
@@ -78,38 +81,28 @@ Now we move on to the predicates, Level Up has chosen some default predicates fo
  - Latitude
  - Longitude
 
-Straight off I can see that we can use the [Basic Geo Vocab](https://www.w3.org/2003/01/geo/) for the lat/long values, and the [OS Spatial Relations Ontology](http://data.ordnancesurvey.co.uk/ontology/spatialrelations/) for the easting and northing values. Let's pop those in.
+Straight off I can see that we can use the [Basic Geo Vocab](https://www.w3.org/2003/01/geo/) for the lat/long values, and the [OS Spatial Relations Ontology](http://data.ordnancesurvey.co.uk/ontology/spatialrelations/) for the easting and northing values. Let's pop those in, and set their data types to whole number for easting/northing values and decimal number for latitude/longitude values.
 
 ![Choosing geo predicates]({{page.imgdir}}lu-geo.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Now let's have a look through the other columns, apologies in advance as I will jump around the list slightly rather than working top to bottom.
 
 ##### **Name** #####
-The next "easiest" column I can see is <code>Name</code>. In most cases when choosing a predicate for a label or name of a Thing (when we're not working from a specific vocabulary that defines a label predicate) we tend to choose between the [RDF Schema](https://www.w3.org/TR/2004/REC-rdf-schema-20040210/)'s "label" and [Dublin Core](http://dublincore.org/documents/2012/06/14/dcmi-terms/)'s "title" (or [FOAF](http://xmlns.com/foaf/spec/) for people, group or organisation names). I believe label is more accurate than title in this case, so I'm using <code>http://www.w3.org/2000/01/rdf-schema#</code>. 
+The next "easiest" column I can see is <code>Name</code>. In most cases when choosing a predicate for a label or name of a Thing (when we're not working from a specific vocabulary that defines a label predicate) we tend to choose between the [RDF Schema](https://www.w3.org/TR/2004/REC-rdf-schema-20040210/)'s "label" and [Dublin Core](http://dublincore.org/documents/2012/06/14/dcmi-terms/)'s "title" (or [FOAF](http://xmlns.com/foaf/spec/) for people, group or organisation names). I believe label is more accurate than title in this case, so I'm using <code>http://www.w3.org/2000/01/rdf-schema#label</code>. 
 
 ##### **Organisation** #####
-Looking through the raw data I can see that it's not always filled out, and when it is it's in an inconsistent manner. The context is also not fully clear and so I'm going to keep it within my domain for now and change the predicate to <code>http://data.contoso.com/environment/allotments/AssociatedOrganisation</code> - if it's needed in the future we can clarify whether the organisations are the owners, managers or similar and update our data at a later date. 
+Looking through the raw data I can see that it's not always filled out, and when it is it's in an inconsistent manner. The context is also not fully clear and so I'm going to keep it within my domain for now and change the predicate to <code>http://data.contoso.com/environment/ontology/associatedOrganisation</code> - if it's needed in the future we can clarify whether the organisations are the owners, managers or similar and update our data at a later date. 
 
 ##### **Borough_Ref and Borough** #####
 
-These look like some likely candidates to appear in a shared vocabulary, and yep - the OS Admin Geo Ontology comes back with a hit - both for [Borough](http://data.ordnancesurvey.co.uk/ontology/admingeo/Borough) and [London Borough](http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough)*. However, the hits are **classes** rather than properties (more on this in an upcoming blogpost) so I don't want to use those identifiers as predicates. As with Organisation, I'm going to tweak the default predicates slightly to make them a bit more descriptive: <code>http://data.contoso.com/environment/allotments/Location/Borough/Ref</code> and <code>http://data.contoso.com/environment/allotments/Location/Borough/Name</code>.
+These look like some likely candidates to appear in a shared vocabulary, and yep - the OS Admin Geo Ontology comes back with a hit - both for [Borough](http://data.ordnancesurvey.co.uk/ontology/Borough) and [London Borough](http://data.ordnancesurvey.co.uk/ontology/admingeo/LondonBorough)*. However, the hits are **classes** rather than properties (more on this in an upcoming blogpost) so I don't want to use those identifiers as predicates. As with Organisation, I'm going to tweak the default predicates very slightly to use the more common practise of writing property URIs using camel case: <code>http://data.contoso.com/environment/ontology/boroughRef</code> and <code>http://data.contoso.com/environment/ontology/borough</code>. As the <code>Borough_Ref</code> is a numerical value in the raw data I set the datatype for that column to whole number.
 
 {: .small .well}
 \* Whilst outside the scope of this walkthrough, we would want to check that this is accurate based on the *contents* of the raw data, quite often a column heading will give the impression that all of its contents are, for example, London Boroughs, when in reality the data may be a mix of Wards, Boroughs and other administrative breakdowns of areas.
 
-##### **Location** #####
+##### **Location / SuppliedPostcode / NearestPostcode / Facilities / Grades / Comments** #####
 
-Leading on from the references to the Borough, I also have a <code>Location</code> column which is more descriptive than an address, so I'm going to tweak my predicate to bring in line with the predicates chosen for Borough_Ref and Borough (I love consistency!). As the raw data often gives instructions e.g. "between the railway tracks north of Thayers Farm Road" I'm going to set the data type to text and specify that these instructions appear in English by using the typeahead language selector.
-
-![Setting a language on the output RDF]({{page.imgdir}}lu-location.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
-
-##### **SuppliedPostcode and NearestPostcode** #####
-
-The raw data shows that supplied postcodes are usually partial, whilst the nearest postcodes are more accurate, but given the column heading we can tell that they won't exactly pin point it (which make sense as allotments are not known for their postal addresses), given that we have latitude/longitude and easting/northing, again I'm going to choose to keep the predicates within my domain and tweak to bring in line with the other location predicates - <code>http://data.contoso.com/environment/allotments/Location/Postcode/Supplied</code> and <code>http://data.contoso.com/environment/allotments/Location/Postcode/Nearest</code>
-
-##### **Facilities, Grades and Comments** #####
-
-As these are only partially filled in and are free text, I'm going to leave the default predicates. <code>Facilities</code> and <code>Comments</code> appear to be free text in the raw data so I'm going to set these to have a language of English, but as the <code>Grade</code> appears to only take a letter value - I'll leave this as simply text.
+The rest of the columns I leave the predicates as they are (whilst tweaking into camel case). In the cases of <code>Location</code>, <code>Features</code>, and <code>Comments</code> often contain text content in English e.g. "between the railway tracks north of Thayers Farm Road" I'm going to set the data type to text and specify in the outputted data that these values are using UK English by using the typeahead language selector.
 
 To summarise, we now have a set of predicates that looks like this:
 
@@ -117,17 +110,17 @@ To summarise, we now have a set of predicates that looks like this:
 |-----------------+------------+-----------------+----------------|
 |   Column       |         Predicate            |    Data Type      |
 |-----------------|------------|-----------------|----------------|
-|	GLA_ID (ID)	|	http://data.contoso.com/environment/allotments/GLA_ID **	|	*default*	|
-|	Borough_Ref	|	http://data.contoso.com/environment/allotments/Location/Borough/Ref	|	Whole number	|
+|	GLA_ID (ID)	|	http://data.contoso.com/environment/ontology/GLA_ID **	|	*default*	|
+|	Borough_Ref	|	http://data.contoso.com/environment/ontology/boroughRef	|	Whole number	|
 |	Name	|	http://www.w3.org/2000/01/rdf-schema#label	|	*default*	|
-|	Location	|	http://data.contoso.com/environment/allotments/Location/Description	|	Text - English (United Kingdom)	|
-|	SuppliedPostcode	|	http://data.contoso.com/environment/allotments/Location/Postcode/Supplied	|	*default*	|
-|	NearestPostcode	|	http://data.contoso.com/environment/allotments/Location/Postcode/Nearest	|	*default*	|
-|	Borough	|	http://data.contoso.com/environment/allotments/Location/Borough/Name	|	*default*	|
-|	Organisation	|	http://data.contoso.com/environment/allotments/AssociatedOrganisation	|	*default*	|
-|	Facilities	|	http://data.contoso.com/environment/allotments/Facilities	|	Text - English (United Kingdom)	|
-|	Grade	|	http://data.contoso.com/environment/allotments/Grade	|	*default*	|
-|	Comments	|	http://data.contoso.com/environment/allotments/Comments	|	Text - English (United Kingdom)	|
+|	Location	|	http://data.contoso.com/environment/ontology/location	|	Text - English (United Kingdom)	|
+|	SuppliedPostcode	|	http://data.contoso.com/environment/ontology/suppliedPostcode	|	*default*	|
+|	NearestPostcode	|	http://data.contoso.com/environment/ontology/nearestPostcode	|	*default*	|
+|	Borough	|	http://data.contoso.com/environment/ontology/borough	|	*default*	|
+|	Organisation	|	http://data.contoso.com/environment/ontology/associatedOrganisation	|	*default*	|
+|	Facilities	|	http://data.contoso.com/environment/ontology/facilities	|	Text - English (United Kingdom)	|
+|	Grade	|	http://data.contoso.com/environment/ontology/grade	|	*default*	|
+|	Comments	|	http://data.contoso.com/environment/ontology/comments	|	Text - English (United Kingdom)	|
 |	Easting	|	http://data.ordnancesurvey.co.uk/ontology/spatialrelations/easting	|	Whole number	|
 |	Northing	|	http://data.ordnancesurvey.co.uk/ontology/spatialrelations/northing	|	Whole number	|
 |	Latitude	|	http://www.w3.org/2003/01/geo/wgs84_pos#lat	|	Decimal number	|
@@ -163,7 +156,7 @@ The downloaded zip file contains RDF in three different formats: N-Triples, Turt
 ![RDF-XML Preview]({{page.imgdir}}lu-rdf.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 <p class="text-center">
-<a class="btn btn-default" href="/assets/downloads/gla-allotment-locations-160217152011.zip">
+<a class="btn btn-default" href="/assets/downloads/gla-allotment-locations-160218101935.zip">
 <span class="glyphicon glyphicon-download-alt">
 Download zip file
 </span>
