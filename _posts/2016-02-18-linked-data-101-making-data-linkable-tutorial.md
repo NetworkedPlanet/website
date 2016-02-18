@@ -6,7 +6,6 @@ tags:
   - linked data
   - level up
   - csv conversion
-  - predicates
 comments: true
 imgdir:	/assets/images/blog/linkeddata101/
 excerpt: A walk-through in using our Level Up converter to go from 3-star to 4-star data using the theory learnt in parts 1 and 2 of this series.
@@ -17,7 +16,7 @@ author: Jen
 {: .well .text-center}
 This article is part of the [Linked Data 101 series](/blog/tags/ld101-series/)
 
-Now that we're a lot more comfortable with [identifiers]() and [predicates](), let's have a play around with some old-school CSV and give it a linked data boost with [Level Up](http://levelup.networkedplanet.com) - our free online converter.
+Now that we're a lot more comfortable with [identifiers](/blog/2016/02/16/linked-data-101-identifiers.html) and [predicates](/blog/2016/02/17/linked-data-101-predicates.html), let's have a play around with some old-school CSV and give it a linked data boost with [Level Up](http://levelup.networkedplanet.com) - our free online converter.
 
 Easy-peasy upload
 ----
@@ -47,14 +46,14 @@ As we saw on the previous blog posts in the [series](/blog/tags/ld101-series/), 
 Choosing a prefix
 ----
 
-The default prefix uses our good friend, example.org, along with the uploaded filename. Whilst useful, my data portal is going to sit on an intranet for my fictional company - contoso. I'm going to tweak it a little so that my prefix for the predicates becomes <code>http://data.contoso.com/environment/ontology/</code>. As I update the prefix, all the predicate URIs and the main identifier URI are updated too.
+The default prefix uses our good friend, example.org, along with the uploaded filename. Whilst useful, my data portal is going to sit on an intranet for the fictional company - contoso - so I'm going to tweak it a little so that my prefix for the predicates becomes <code>http://data.contoso.com/environment/ontology/</code>. As I update the prefix, all the predicate URIs and the main identifier URI are updated too.
 
 ![Update the prefix]({{page.imgdir}}lu-prefix.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Which column shall I use as the identifier?
 ----
 
-I can see from both the column name and the preview data at the bottom of the page that the <code>GLA_ID</code> column contains a numeric identifier for each record, so I select the "ID" radio button next to <code>GLA_ID</code> and as it's not already a valid URI I scroll down to check out what my identifier template is looking like.
+I can see from both the column name and the preview data at the bottom of the page that the <code>GLA_ID</code> column contains a numeric identifier for each record, so I select the "ID" radio button next to <code>GLA_ID</code> and as that column contains a number rather than a valid URI I scroll down to check out what my identifier template is looking like.
 
 Currently it's using the prefix <code>http://data.contoso.com/environment/ontology/</code> and a row number tag <code>{rn}</code>. Firstly, I don't want my resources to sit in the <code>/ontology/</code> namespace so I change that to <code>/allotments/</code>, given that I want to use my ID <code>GLA_ID</code> I edit the template to include a tag for <code>GLA_ID</code> instead. To protect myself against typos I use the <code>Tags</code> link to show me a drop down list of all available tags and select <code>GLA_ID</code>, which adds it to the end of my identifier template:
 
@@ -102,7 +101,7 @@ These look like some likely candidates to appear in a shared vocabulary, and yep
 
 ##### **Location / SuppliedPostcode / NearestPostcode / Facilities / Grades / Comments** #####
 
-The rest of the columns I leave the predicates as they are (whilst tweaking into camel case). In the cases of <code>Location</code>, <code>Features</code>, and <code>Comments</code> often contain text content in English e.g. "between the railway tracks north of Thayers Farm Road" I'm going to set the data type to text and specify in the outputted data that these values are using UK English by using the typeahead language selector.
+The rest of the columns I leave the predicates as they are (whilst tweaking into camel case). <code>Location</code>, <code>Features</code>, and <code>Comments</code> often contain text content in English e.g. "between the railway tracks north of Thayers Farm Road" so I'm going to set the data type to text and select UK English by using the typeahead language selector.
 
 To summarise, we now have a set of predicates that looks like this:
 
@@ -128,7 +127,7 @@ To summarise, we now have a set of predicates that looks like this:
 
 
 {: .small .well}
-\* The column set as the ID will not be added as a property, so we don't need to concern ourselves with this predicate. If you want to use it in the identifier and have it as a property in the raw data, do not select it as the primary ID - simply use its tag in the identifier template.
+\** The column set as the ID will not be added as a property, so we don't need to concern ourselves with this predicate. If you want to use it in the identifier and have it as a property in the raw data, do not select it as the primary ID - simply use its tag in the identifier template.
 
 Convert!
 ---
@@ -166,7 +165,9 @@ Download zip file
 All done! 
 -----
 
-This article has guided you through the process of using [Level Up](http://levelup.networkedplanet.com) to convert CSV into 4-star linked data. In a real world scenario, this would be one step in a project which would start by looking at your data and first mapping out your own vocabulary of predicates. Feel free to use the comments below with any questions or feedback, Level Up is in beta release so please do let us know if you have [suggestions or feedback](http://levelup.networkedplanet.com/feedback) or [a copy of the converter software to run in house](/#contact) (important if you are working with personal data).
+This article has guided you through the process of using [Level Up](http://levelup.networkedplanet.com) to convert CSV into 4-star linked data. In a real world scenario, this would be one step in a project which would start by looking at your data and first mapping out your own vocabulary of predicates.
+
+Level Up is in beta release so please do let us know if you have [suggestions or feedback](http://levelup.networkedplanet.com/feedback) or [a copy of the converter software to run in house](/#contact) (important if you are working with personal data).
 
 <p class="text-center">
 <a class="btn-lg btn-primary" href="http://levelup.networkedplanet.com">Try it yourself at Level Up!</a>
