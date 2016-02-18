@@ -48,7 +48,7 @@ Choosing a prefix
 
 The default prefix uses our good friend, example.org, along with the uploaded filename. Whilst useful, my data portal is going to sit on an intranet for the fictional company - contoso - so I'm going to tweak it a little so that my prefix for the predicates becomes <code>http://data.contoso.com/environment/ontology/</code>. As I update the prefix, all the predicate URIs and the main identifier URI are updated too.
 
-![Update the prefix]({{page.imgdir}}lu-prefix.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Update the prefix]({{page.imgdir}}lu-prefix.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Which column shall I use as the identifier?
 ----
@@ -57,7 +57,7 @@ I can see from both the column name and the preview data at the bottom of the pa
 
 Currently it's using the prefix <code>http://data.contoso.com/environment/ontology/</code> and a row number tag <code>{rn}</code>. Firstly, I don't want my resources to sit in the <code>/ontology/</code> namespace so I change that to <code>/allotments/</code>, given that I want to use my ID <code>GLA_ID</code> I edit the template to include a tag for <code>GLA_ID</code> instead. To protect myself against typos I use the <code>Tags</code> link to show me a drop down list of all available tags and select <code>GLA_ID</code>, which adds it to the end of my identifier template:
 
-![Update the identifier template]({{page.imgdir}}lu-identifiertemplate.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Update the identifier template]({{page.imgdir}}lu-identifiertemplate.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Choosing predicates for columns
 ---
@@ -82,7 +82,7 @@ Now we move on to the predicates, Level Up has chosen some default predicates fo
 
 Straight off I can see that we can use the [Basic Geo Vocab](https://www.w3.org/2003/01/geo/) for the lat/long values, and the [OS Spatial Relations Ontology](http://data.ordnancesurvey.co.uk/ontology/spatialrelations/) for the easting and northing values. Let's pop those in, and set their data types to whole number for easting/northing values and decimal number for latitude/longitude values.
 
-![Choosing geo predicates]({{page.imgdir}}lu-geo.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Choosing geo predicates]({{page.imgdir}}lu-geo.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Now let's have a look through the other columns, apologies in advance as I will jump around the list slightly rather than working top to bottom.
 
@@ -134,25 +134,25 @@ Convert!
 
 That's everything set up - all that's left now is to hit the "Convert your CSV" button and let Level Up do its magic.
 
-![Convert CSV to RDF]({{page.imgdir}}lu-convert.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Convert CSV to RDF]({{page.imgdir}}lu-convert.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Bam! We can now download our data ->
 
-![Download your converted data]({{page.imgdir}}lu-congrats.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Download your converted data]({{page.imgdir}}lu-congrats.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 The downloaded zip file contains RDF in three different formats: N-Triples, Turtle and RDF-XML. Going into the various formats is outside the scope of this article, so here's some segments of what to expect, plus a download of the zip file itself. 
 
 ** N-Triples - .nt **
 
-![N-Triples Preview]({{page.imgdir}}lu-nt.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![N-Triples Preview]({{page.imgdir}}lu-nt.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 ** Turtle - .ttl**
 
-![Turtle Preview]({{page.imgdir}}lu-ttl.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Turtle Preview]({{page.imgdir}}lu-ttl.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 ** RDF-XML - .rdf**
 
-![RDF-XML Preview]({{page.imgdir}}lu-rdf.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![RDF-XML Preview]({{page.imgdir}}lu-rdf.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 <p class="text-center">
 <a class="btn btn-default" href="/assets/downloads/gla-allotment-locations-160218101935.zip">
