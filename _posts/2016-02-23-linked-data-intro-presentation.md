@@ -58,13 +58,13 @@ Linked data is the set of standards for structuring data in a way that explicitl
 
 If those datasets (from the earlier slide) each had column headers for "Ward" how do we decide that they have matching meanings? Currently we need to do that process manually, or have extremely complex linguistic programs to try and replicate that work for us. 
 
-![Slide 10]({{page.imgdir}}Slide10.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Slide 10 - a simple CSV example]({{page.imgdir}}Slide10.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 How do we harness this power? - By agreeing to use the same terms when talking about the same concepts in our data. 
 
 We already acknowledge that shared taxonomies are a good thing (using SNOMED-CT or ICD classifications for example). Using a common vocabulary for our data extending this principle to data itself so that the properties and types of the things that we are talking about can be more readily understood, not only by people reading it, but also by the machines that process it.
 
-![Slide 11]({{page.imgdir}}Slide11.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
+![Slide 11 - the CSV data as RDF triples]({{page.imgdir}}Slide11.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 Published shared vocabularies are already out there in use on the Linked Data Web. Such as:
 
