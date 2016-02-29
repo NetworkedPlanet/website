@@ -173,7 +173,7 @@ Level Up is in beta release so please do let us know if you have [suggestions or
 <a class="btn-lg btn-primary" href="http://levelup.networkedplanet.com">Try it yourself at Level Up!</a>
 </p>
 
-Next in the series we'll be taking a quick look at a few more linked data concepts - such as Types, and don't forget we also run webinars and training throughout the year. See you next time!
+Next in the series we'll be taking a look at how to query linked data. Don't forget we also run webinars and training throughout the year. See you next time!
 
 
 {: .well .text-center}
