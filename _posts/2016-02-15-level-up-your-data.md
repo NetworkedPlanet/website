@@ -10,10 +10,7 @@ comments: true
 image: /assets/images/blog/staroutline.png
 imagealt: Level Up (beta)
 imgdir:	/assets/images/blog/levelup/
-custom_css: levelup
-custom_js:
-- jquery.min
-- levelup
+custom_css: /assets/stylesheets/levelup.css
 excerpt: Looking for a way to see what your CSV files will look like as RDF? Look no further...
 author: Jen
 ---

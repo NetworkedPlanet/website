@@ -13,3 +13,20 @@
 .gap-left-dbl {
   margin-left: 2em; 
 }
+
+.gap-top {
+  margin-top: 1em; 
+}
+
+.gap-bottom {
+  margin-bottom: 1em; 
+}
+
+.gap-top-dbl {
+  margin-top: 2em; 
+}
+
+.gap-bottom-dbl {
+  margin-bottom: 2em; 
+}
+

@@ -66,3 +66,31 @@ var trackOutboundLink = function(url) {
    }
 }
 </script>
+
+
+	<!-- page / post specific external or custom CSS / JS -->
+	
+	{% if page.external_css %}
+	  {% for css_url in page.external_css %}
+	  <link rel="stylesheet" href="{{ css_url }}" media="screen" type="text/css">
+	  {% endfor %}
+	{% endif %}
+
+	{% if page.external_js %}
+	  {% for js_url in page.external_js %}
+	  <script src="{{ js_url }}" type="text/javascript"></script>
+	  {% endfor %}
+	{% endif %}
+	
+	{% if page.custom_css %}
+	  {% for css_filepath in page.custom_css %}
+	  <link rel="stylesheet" href="{{ css_filepath | prepend: site.baseurl }}" media="screen" type="text/css">
+	  {% endfor %}
+	{% endif %}
+
+	{% if page.custom_js %}
+	  {% for js_filepath in page.custom_js %}
+	  <script src="{{ js_filepath | prepend: site.baseurl }}" type="text/javascript"></script>
+	  {% endfor %}
+	{% endif %}
+	
