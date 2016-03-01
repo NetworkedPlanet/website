@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Crowdsourcing error checking
+title:  Open data feedback at work!
 tags:
   - open data
 comments: true
@@ -36,4 +36,4 @@ So a massive shout out to [@ldn_data](https://twitter.com/LDN_data "London Datas
 ![Gif: liz lemon high five](http://gifrific.com/wp-content/uploads/2012/04/Tina-Fey-giving-herself-high-five.gif){: width="350px" .img-medium .img-responsive .center-block .bordered-image}
 
 {: .text-center .img-caption}
-You rock!
+*You rock!*
