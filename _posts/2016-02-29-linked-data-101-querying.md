@@ -281,6 +281,8 @@ for(var i = 0; i < markers.length; i++) {
 }
 </pre>
 
+For simplicity I've used a simple array in the example, but once you are comfortable using SPARQL you can use it to query remote SPARQL endpoints and work directly on the returned results.
+
 Learning more SPARQL
 ------
 
