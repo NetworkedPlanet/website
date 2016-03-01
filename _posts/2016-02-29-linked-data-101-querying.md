@@ -229,7 +229,7 @@ Only returning particular values
 If we only want or need particular values, we can replace the <code>SELECT *</code> and be more specific:
 
 <pre>
-SELECT ?label ?lat ?long
+SELECT ?label ?long ?lat
 WHERE
 { 
 ?s <http://data.contoso.com/environment/ontology/suppliedPostcode> "E17" .
@@ -267,7 +267,7 @@ var markers = [
 	{"label":"Willow Tree", "long":-0.018091, "lat":51.605109}
 ];
 
-var map = L.map('map').setView([51.58693, -0.0333882], 12);
+var map = L.map('map').setView([51.58693, -0.04], 12);
 
 var tiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 	maxZoom: 19,
@@ -286,7 +286,7 @@ Learning more SPARQL
 
 The queries above are probably the most straightforward (and useful!) queries to learn to get started with SPARQL and so this is where we'll leave it for our Linked Data 101 series. 
 
-As with any data querying language there's various levels you may want to take your SPARQL skills up to. A good place to start is our [free 1 hour SPARQL 101 webinar](/blog/2016/01/18/linked-data-webinars-season-2.html) - the next one is being held on March 10th. As always [look our for posts](/blog/tags/sparql/) right here on the blog!
+As with any data querying language there's various levels you may want to take your SPARQL skills up to. A good place to start is our [free 1 hour SPARQL 101 webinar](/blog/2016/01/18/linked-data-webinars-season-2.html) - the next one is being held on [March 10th](https://www.eventbrite.co.uk/e/webinar-sparql-101-tickets-20857308772 "Register for our free SPARQL webinar"). As always [look our for posts](/blog/tags/sparql/) right here on the blog!
 
 {: .well .text-center}
 This article is part of the [Linked Data 101 series](/blog/tags/ld101-series/)
