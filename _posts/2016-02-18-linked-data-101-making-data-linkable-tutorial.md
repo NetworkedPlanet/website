@@ -84,11 +84,6 @@ Straight off I can see that we can use the [Basic Geo Vocab](https://www.w3.org/
 
 ![Choosing geo predicates]({{page.imgdir}}lu-geo.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
-{: .alert .alert-danger .text-center}
-Whilst writing the [follow up blog post](/blog/2016/02/29/linked-data-101-querying.html) to this article, which includes displaying data on a map, it became obvious that the [raw data](http://data.london.gov.uk/dataset/allotment-locations/resource/b40c84cf-be67-4b99-bff4-c3ff08b37698#) had **mislabelled** the latitude and longitude values (and has them mixed up). This can also be seen in the preview data at the bottom Level Up converter page. This post has now been updated to make sure that our *outputted* data is in better shape. The moral of the story: always check for bad data and errors in what you have been supplied! 
-
-![Error found in the raw data]({{page.imgdir}}baddata.png){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
-
 Now let's have a look through the other columns, apologies in advance as I will jump around the list slightly rather than working top to bottom.
 
 ##### **Name** #####
@@ -127,13 +122,12 @@ To summarise, we now have a set of predicates that looks like this:
 |	Comments	|	http://data.contoso.com/environment/ontology/comments	|	Text - English (United Kingdom)	|
 |	Easting	|	http://data.ordnancesurvey.co.uk/ontology/spatialrelations/easting	|	Whole number	|
 |	Northing	|	http://data.ordnancesurvey.co.uk/ontology/spatialrelations/northing	|	Whole number	|
-|	Latitude	|	http://www.w3.org/2003/01/geo/wgs84_pos#**long** ***	|	Decimal number	|
-|	Longitude	|	http://www.w3.org/2003/01/geo/wgs84_pos#**lat** ***	|	Decimal number	|
+|	Latitude	|	http://www.w3.org/2003/01/geo/wgs84_pos#lat	|	Decimal number	|
+|	Longitude	|	http://www.w3.org/2003/01/geo/wgs84_pos#long	|	Decimal number	|
 
 
 {: .small .well}
 \** The column set as the ID will not be added as a property, so we don't need to concern ourselves with this predicate. If you want to use it in the identifier and have it as a property in the raw data, do not select it as the primary ID - simply use its tag in the identifier template.   
-\*** See explanation above
 
 Convert!
 ---
@@ -161,7 +155,7 @@ The downloaded zip file contains RDF in three different formats: N-Triples, Turt
 ![RDF-XML Preview]({{page.imgdir}}lu-rdf.PNG){: width="800px" .img-medium .img-responsive .center-block .bordered-image}
 
 <p class="text-center">
-<a class="btn btn-default" href="/assets/downloads/gla-allotment-locations-160301140247.zip">
+<a class="btn btn-default" href="/assets/downloads/gla-allotment-locations-160301152200.zip">
 <span class="glyphicon glyphicon-download-alt">
 Download zip file
 </span>
