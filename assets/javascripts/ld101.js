@@ -27,7 +27,7 @@ var tiles = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 for(var i = 0; i < markers.length; i++) {
 	var m = markers[i];
-	var marker = L.marker([m.lat, m.long]).addTo(map);
+	var marker = L.marker([m.long, m.lat]).addTo(map);
     marker.bindPopup(m.label);
 }
         
