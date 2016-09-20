@@ -18,6 +18,9 @@ collections:
         output: true
     glossary:
         output: true
+    training:
+        output: true
+        permalink: /training/:path/
 
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 6
