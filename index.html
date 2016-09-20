@@ -8,7 +8,9 @@ mailchimp: true
 			<div class="row cta">
 				<div class="col-sm-3">
 					<div id="box-1" class="box">
+						<a href="/taking-control-of-your-data.html" title="Taking control of your data">
 						<img id="image-1" src="/assets/images/homepage/cta/1.png"/>
+						</a>
 						<span class="caption simple-caption">
 							<h2>Taking control of your data</h2>
 						</span>
@@ -62,6 +64,7 @@ mailchimp: true
 						</li>
 						{% endfor %}
 					</ul>
+					<p class="text-right"><a href="/blog" title="More blog posts">More &raquo;</a> </p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -69,22 +72,25 @@ mailchimp: true
 				<div class="col-sm-6">
 					<h2>Training</h2>
 					<ul class="training">
-						{% for item in site.training %}
+						{% for item in site.training limit:3 %}
 							<li>
 								{% include training_teaser.html post=item %}
 							</li>
 						{% endfor %}
 					</ul>
+					<p class="text-right"><a href="/training" title="More training courses">More &raquo;</a> </p>
 				</div>
 				<div class="col-sm-6">
-					<h2>Our ethos</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue dui
-						eget risus convallis, porta efficitur nibh placerat. Etiam sollicitudin libero neque,
-						sit amet auctor tellus bibendum vitae. Cras faucibus suscipit laoreet. </p>
-					<p>Duis vehicula cursus urna, vitae efficitur ipsum hendrerit eget. Nunc blandit
-						arcu a blandit tempus. Praesent justo urna, vestibulum et viverra non, tincidunt
-						ut risus. Etiam rhoncus, odio vel auctor pulvinar, risus dolor vehicula dolor, id
-						varius orci purus vel elit. </p>
+					<h2>Who we are</h2>
+					<p>We offer consultancy in anything data related and training so that your organisation can tackle
+						digital information management challenges with confidence. We also build clever software and tools that are
+					built to conform to official standards. We won't push products at you that don't fit your requirements.</p>
+					<p>At Networked Planet we're committed to using our years of experience with information
+					management to help companies that are helping others. Our "data for good" projects focus
+						on helping charities and voluntary organisations reap the same benefits to data control
+					that the private sector have had access to for years.</p>
+					<p>We believe that every project should be build from the ground up, tailor made to your needs.
+						To start that conversation just <a href="#contact">drop us a line</a>. </p>
 				</div>
 			</div>
 			<div class="spacer"></div>
@@ -415,7 +421,7 @@ mailchimp: true
             </div>
 			<div class="spacer">&nbsp;</div>
 			<div class="row text-left">
-				
+
 				</div>
 					<p>&copy; 2016 Networked Planet Limited.</p>
 					<p><small class="text-muted">Registered in England no. 5273377 Registered Office: 17 Cosgrove Road, Old Stratford, Milton Keynes, MK19 6AG</small></p>
