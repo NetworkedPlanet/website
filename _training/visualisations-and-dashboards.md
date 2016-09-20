@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Learning to use the right tools for your needs
-excerpt: Get to know the various tools available for data management to choose the right ones for your organisation
+title: Visualisations and Dashboards
+excerpt: Learn how to create effective visualisations and dashboards
 comments: false
-imgdir: /assets/images/training/tools/
-cost: £500
+imgdir: /assets/images/training/visdash/
+cost: £1000
 dates: TBC
 capacity: 5
 ---

@@ -106,6 +106,7 @@ $np-blue: #005680;
   font-size: 1.1em;
   padding: 10px;
   margin: 0;
+  text-transform: capitalize;
 }
 
 .homepage #row-2 h2,
@@ -382,7 +383,7 @@ html.scrollnav {
 .intropara {
   font-family: 'Cabin', sans-serif;
   line-height: 1.5;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .highlight {
