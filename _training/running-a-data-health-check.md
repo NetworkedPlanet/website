@@ -4,6 +4,8 @@ title: Running a data health check for your organisation
 excerpt: This course runs over the processes you should follow when embarking on the first stage of your data control journey
 comments: false
 imgdir: /assets/images/training/data-health-check/
+cost: £650
+dates: TBC
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris elementum risus varius, maximus ex non, ullamcorper ante. Phasellus luctus neque ut mauris cursus aliquam. Fusce vel nibh eget sapien varius luctus sed vel turpis. Suspendisse placerat enim turpis, sed efficitur nulla convallis et. Donec faucibus ex eu tristique porta. In enim nunc, condimentum ac varius sed, feugiat quis justo. Aenean varius id tortor sit amet posuere. Quisque egestas libero in dui feugiat dapibus in in arcu. Curabitur iaculis, nisl cursus sagittis sodales, dui lectus sollicitudin metus, vel scelerisque ante ipsum at nisi. Donec auctor imperdiet auctor. Duis egestas lacus et risus consectetur ultricies. Donec sollicitudin, nibh eu finibus scelerisque, eros lorem pellentesque metus, eu egestas nunc massa nec nisi. Vivamus vitae diam in massa luctus tristique non feugiat sem. Sed egestas a nunc a ornare.

@@ -1,0 +1,47 @@
+---
+layout: page
+title: NetworkedPlanet Training
+permalink: /training/index.html
+---
+
+<h2>Training Courses</h2>
+
+<div class="row">
+    {% for item in site.training offset:0 limit:2 %}
+    <div class="col-md-6">
+        {% include training_info.html post=item %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row">
+    {% for item in site.training offset:2 limit:2 %}
+    <div class="col-md-6">
+        {% include training_info.html post=item %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row">
+    {% for item in site.training offset:4 limit:2 %}
+    <div class="col-md-6">
+        {% include training_info.html post=item %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row">
+    {% for item in site.training offset:6 limit:2 %}
+    <div class="col-md-6">
+        {% include training_info.html post=item %}
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row">
+    {% for item in site.training offset:8 limit:2 %}
+    <div class="col-md-6">
+        {% include training_info.html post=item %}
+    </div>
+    {% endfor %}
+</div>
