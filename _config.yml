@@ -18,8 +18,12 @@ collections:
         output: true
     glossary:
         output: true
-    training:
+    services:
         output: true
+    training:
+            output: true
+    products:
+            output: true
 
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 6

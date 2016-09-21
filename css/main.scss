@@ -201,6 +201,19 @@ blockquote {
   border-color: transparent transparent transparent #ea9417;
 }
 
+.timeline ul li time {
+  font-weight: bold;
+}
+.timeline ul li a {
+  color:#333;
+  font-weight:bold;
+}
+.timeline ul li a:hover {
+  text-decoration: underline;
+  color:#333;
+  font-weight:bold;
+}
+
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
@@ -311,47 +324,21 @@ body {
 /* --------------------------------------
    Scrolling Nav Stuff
    --------------------------------------*/
-   
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
 .sn-section {
-    min-height: 100%;
-    padding-top: 50px;
-    text-align: center;
-    background: #fff;
+  min-height: 100%;
+  text-align: center;
+  background: #eee;
 }
 
 #intro {
   padding-top: 100px;
 }
 
-.sn-section:nth-child(even) {
-    background: #eee;
-}
-
-.sn-lead-image {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    /* background: #fff;
-	background-image: url('/assets/images/data.path.jpg'); */
-}
-
-.sn-lead-image:after {
-	content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/assets/images/data.path.jpg); 
-	background-size: cover;
-    width: 100%;
-    height: 100%;
-    opacity : 0.2;
-    z-index: -1;
-}
 
 @media(min-width:767px) {
     .navbar {
@@ -364,16 +351,6 @@ of those sections to manage the look and feel of the site. */
     .top-nav-collapse {
         padding: 0;
     }
-}
-
-.scrollnav body {
-    width: 100%;
-    height: 100%;
-}
-
-html.scrollnav {
-    width: 100%;
-    height: 100%;
 }
 
 .spacer-top {
@@ -444,3 +421,41 @@ html.scrollnav {
     border-radius: 20px;
 	margin: 0 auto;
 }
+
+.gap-right {
+  margin-right: 1em;
+}
+
+.gap-left {
+  margin-left: 1em;
+}
+
+.gap-right-dbl {
+  margin-right: 2em;
+}
+
+.gap-left-dbl {
+  margin-left: 2em;
+}
+
+.gap-top {
+  margin-top: 1em;
+}
+
+.gap-bottom {
+  margin-bottom: 1em;
+}
+
+.gap-top-dbl {
+  margin-top: 2em;
+}
+
+.gap-bottom-dbl {
+  margin-bottom: 2em;
+}
+
+.img-caption {
+  margin-top: -0.5em;
+  margin-bottom:1.5em;
+}
+

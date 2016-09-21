@@ -1,47 +1,61 @@
 ---
 layout: page
-title: NetworkedPlanet Training
+title: Training
 permalink: /training/index.html
 ---
 
-<h2>Training Courses</h2>
+<section id="training" class="sn-section">
+    <div class="container text-left">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1>Training Courses</h1>
+            </div>
+        </div>
+        <div class="row">
+            <p class="lead text-center">
+                The best way to make sure you’re harnessing the full power of your data, is to make sure that you and your team are confident in your understanding of the concepts as well as the technologies involved in Open & Linked Data.
+            </p>
+        </div>
 
-<div class="row">
-    {% for item in site.training offset:0 limit:2 %}
-    <div class="col-md-6">
-        {% include training_info.html post=item %}
-    </div>
-    {% endfor %}
-</div>
+        <div class="row">
+            {% for item in site.training offset:0 limit:2 %}
+            <div class="col-md-6">
+                {% include infoblock-training.html post=item %}
+            </div>
+            {% endfor %}
+        </div>
 
-<div class="row">
-    {% for item in site.training offset:2 limit:2 %}
-    <div class="col-md-6">
-        {% include training_info.html post=item %}
-    </div>
-    {% endfor %}
-</div>
+        <div class="row">
+            {% for item in site.training offset:2 limit:2 %}
+            <div class="col-md-6">
+                {% include infoblock-training.html post=item %}
+            </div>
+            {% endfor %}
+        </div>
 
-<div class="row">
-    {% for item in site.training offset:4 limit:2 %}
-    <div class="col-md-6">
-        {% include training_info.html post=item %}
-    </div>
-    {% endfor %}
-</div>
+        <div class="row">
+            {% for item in site.training offset:4 limit:2 %}
+            <div class="col-md-6">
+                {% include infoblock-training.html post=item %}
+            </div>
+            {% endfor %}
+        </div>
 
-<div class="row">
-    {% for item in site.training offset:6 limit:2 %}
-    <div class="col-md-6">
-        {% include training_info.html post=item %}
-    </div>
-    {% endfor %}
-</div>
+        <div class="row">
+            {% for item in site.training offset:6 limit:2 %}
+            <div class="col-md-6">
+                {% include infoblock-training.html post=item %}
+            </div>
+            {% endfor %}
+        </div>
 
-<div class="row">
-    {% for item in site.training offset:8 limit:2 %}
-    <div class="col-md-6">
-        {% include training_info.html post=item %}
+        <div class="row">
+            {% for item in site.training offset:8 limit:2 %}
+            <div class="col-md-6">
+                {% include infoblock-training.html post=item %}
+            </div>
+            {% endfor %}
+        </div>
     </div>
-    {% endfor %}
-</div>
+</section>
+
