@@ -8,21 +8,21 @@ title: NetworkedPlanet Blog
 <div class="row">
     {% for post in paginator.posts offset:0 limit:2 %}
         <div class="col-md-6">
-			{% include post_teaser.html post=post %}
+			{% include teaser-post.html post=post %}
         </div>
     {% endfor %}
 </div>
 <div class="row">
     {% for post in paginator.posts offset:2 limit:2 %}
         <div class="col-md-6">
-			{% include post_teaser.html post=post %}
+			{% include teaser-post.html post=post %}
         </div>
 	{% endfor %}
 </div>
 <div class="row">
     {% for post in paginator.posts offset:4 limit:2 %}
         <div class="col-md-6">
-			{% include post_teaser.html post=post %}
+			{% include teaser-post.html post=post %}
         </div>
     {% endfor %}
 </div>

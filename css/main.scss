@@ -52,6 +52,84 @@ $np-blue: #005680;
 	width: 2em;
 }
 
+.box {
+  border: 5px solid #fff;
+  cursor: pointer;
+  height: 250px;
+  margin: 10px 0;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  width: 250px;
+  -webkit-box-shadow: 1px 1px 1px 1px #ccc;
+  -moz-box-shadow: 1px 1px 1px 1px #ccc;
+  box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.box img {
+  position: absolute;
+  left: 0;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+}
+
+.box .caption {
+  background-color: rgba(0,0,0,0.8);
+  position: absolute;
+  color: #fff;
+  z-index: 100;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  left: 0;
+}
+
+.box .simple-caption {
+  height: 40px;
+  width: 250px;
+  display: block;
+  bottom: -40px;
+  line-height: 25pt;
+  text-align: center;
+  -moz-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+.caption h2 {
+  font-size: 1.1em;
+  padding: 10px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.homepage #row-2 h2,
+.homepage #row-3 h2 {
+  text-align: left;
+}
+.homepage ul.news,
+.homepage ul.training {
+  list-style: none;
+  margin:0;
+  padding:0;
+}
+.homepage ul.news li,
+.homepage ul.training li {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+.homepage ul.news li h3.media-heading,
+.homepage ul.training li h3.media-heading {
+  font-size:1.2em;
+}
+
 address {
 	text-align: left;
 	margin-left: auto;
@@ -63,6 +141,108 @@ blockquote {
 	font-size:1em;
 	font-style:italic;
 }
+
+
+/* History timeline styles
+-------------------------------------------------- */
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #fff;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #ea9417;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #ea9417 transparent transparent;
+}
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #ea9417;
+}
+
+.timeline ul li time {
+  font-weight: bold;
+}
+.timeline ul li a {
+  color:#333;
+  font-weight:bold;
+}
+.timeline ul li a:hover {
+  text-decoration: underline;
+  color:#333;
+  font-weight:bold;
+}
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px; /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #ea9417 transparent transparent;
+  }
+}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -93,7 +273,7 @@ body {
 --------------------------------------------*/
 @media (min-width: 1200px) {
   .container-fluid {
-    max-width: 980px;
+    max-width: 1170px;
   }
 }
 
@@ -144,47 +324,21 @@ body {
 /* --------------------------------------
    Scrolling Nav Stuff
    --------------------------------------*/
-   
+
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
-The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children 
+The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
 
 .sn-section {
-    min-height: 100%;
-    padding-top: 50px;
-    text-align: center;
-    background: #fff;
+  min-height: 100%;
+  text-align: center;
+  background: #eee;
 }
 
 #intro {
   padding-top: 100px;
 }
 
-.sn-section:nth-child(even) {
-    background: #eee;
-}
-
-.sn-lead-image {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    /* background: #fff;
-	background-image: url('/assets/images/data.path.jpg'); */
-}
-
-.sn-lead-image:after {
-	content : "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(/assets/images/data.path.jpg); 
-	background-size: cover;
-    width: 100%;
-    height: 100%;
-    opacity : 0.2;
-    z-index: -1;
-}
 
 @media(min-width:767px) {
     .navbar {
@@ -199,23 +353,14 @@ of those sections to manage the look and feel of the site. */
     }
 }
 
-.scrollnav body {
-    width: 100%;
-    height: 100%;
-}
-
-html.scrollnav {
-    width: 100%;
-    height: 100%;
-}
-
 .spacer-top {
-  padding-top: 100px;
+  padding-top: 70px;
 }
 
 .intropara {
   font-family: 'Cabin', sans-serif;
   line-height: 1.5;
+  margin-top: 50px;
 }
 
 .highlight {
@@ -276,3 +421,41 @@ html.scrollnav {
     border-radius: 20px;
 	margin: 0 auto;
 }
+
+.gap-right {
+  margin-right: 1em;
+}
+
+.gap-left {
+  margin-left: 1em;
+}
+
+.gap-right-dbl {
+  margin-right: 2em;
+}
+
+.gap-left-dbl {
+  margin-left: 2em;
+}
+
+.gap-top {
+  margin-top: 1em;
+}
+
+.gap-bottom {
+  margin-bottom: 1em;
+}
+
+.gap-top-dbl {
+  margin-top: 2em;
+}
+
+.gap-bottom-dbl {
+  margin-bottom: 2em;
+}
+
+.img-caption {
+  margin-top: -0.5em;
+  margin-bottom:1.5em;
+}
+

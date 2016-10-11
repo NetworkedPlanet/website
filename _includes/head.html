@@ -3,7 +3,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>{{ site.title }} {% if page.page-title %}{{ page.page-title }}{% endif %}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.date and page.excerpt %}{{ page.date | date: '%d %b %Y' }} - {{ page.excerpt | strip_html | truncate: 120, '...'}}{% else %}{{ site.description }}{% endif %}">
 	<meta name="robots" content="NOODP">
 	
@@ -27,8 +27,7 @@
 
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}" />
     <link rel="stylesheet" href="{{ "/css/cookiecuttr.css" | prepend: site.baseurl }}" />
-	<link rel="stylesheet" href="{{ "/css/netplan.css" | prepend: site.baseurl }}" />
-	
+
 	
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

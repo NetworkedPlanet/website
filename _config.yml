@@ -18,6 +18,10 @@ collections:
         output: true
     glossary:
         output: true
+    services:
+        output: true
+    products:
+        output: true
 
 permalink: /blog/:year/:month/:day/:title.html
 paginate: 6
