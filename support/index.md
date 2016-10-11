@@ -9,7 +9,7 @@ All customers with a current support contract can access NetworkedPlanet support
 If you do not have a current support contact, but have a question about installing or using our products, please email us at [support@networkedplanet.com](mailto:support@networkedplanet.com).
 
 ## Upgrades ##
-All customers with a current support contract can access an upgrade to the latest version of the product. The table below indicates the current version of each of our products. If you are on an older version and wish to upgrade please email [support@networkedplanet.com](mailto:support@networkedplanet) and we will provide you with a download link.
+All customers with a current support contract can access an upgrade to the latest version of the product. The table below indicates the current version of each of our products. If you are on an older version and wish to upgrade, please email [support@networkedplanet.com](mailto:support@networkedplanet), and we will provide you with a download link.
 
 | **Product**	| **Current Version** |
 | Data Platform | 1.0                 |
@@ -27,7 +27,7 @@ All customers with a current support contract can access an upgrade to the lates
 {:.table}
 
 ## Documentation ##
-All products come with complete documentation. For easier access we have put some of the more recent documentation online - if the product you require documentation for is not listed below please [contact us](mailto:support@networkedplanet.com). The following documentation is currently available:
+All products come with complete documentation. For easier access we have put some of the more recent documentation online - if the product you require documentation for is not listed below, please [contact us](mailto:support@networkedplanet.com). The following documentation is currently available:
 
   * [Data Platform 1.0](./dataplatform_1.0/)
   * [TMCore07 SP6](./tmcore07sp6/)
