@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Key Data Innovations to Insure Your Organisation Survives and Thrives
+title: Key Data Innovations to Ensure Your Organisation Survives and Thrives
 excerpt: Sign up to learn about data protection and how to lead organisations toward better collection and use of data at our workshop on the 10th of November. 
 comments: true
 tags:
