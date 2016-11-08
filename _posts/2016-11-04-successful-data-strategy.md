@@ -15,7 +15,6 @@ imagealt: data padlock
 
 This one hour presentation by Lea is aimed at board members, directors, managers and leaders of charities, non-profits and social enterprises. Starting with the challenges that these organisations face around the collection, processing and use of data; the presentation describes the key ways in which leaders can effectively define and implement a data strategy and promote evidence informed decision making within their organisation. 
 
-This video is also a useful introduction to concepts that we will delve into in much more detail in our [forthcoming workshop](/blog/2016/10/24/key-data-innovations.html) at the National Council of Voluntary Organisations in London on the 10th of November. 
 
 <div class="row" id="row-3">
 	<div class="col-sm-6 col-md-offset-3">
