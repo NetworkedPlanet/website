@@ -8,6 +8,8 @@ tags:
   - open data
   - opinion
   - conference
+  - odcamp
+  - events
 author: Jen
 imgdir:	/assets/images/blog/odcamp3/
 image: /assets/images/blog/odcamp-sq.jpg

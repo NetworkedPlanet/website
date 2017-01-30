@@ -11,6 +11,8 @@ tags:
   - open data
   - opinion
   - conference
+  - odcamp
+  - events
 ---
 
 After missing out on ODCamp1 which was held in Winchester earlier in the year, I was looking forward to seeing what was in store for those attending the second. A [storify summary of ODCamp1](https://storify.com/RnROrganisation/odcamp-in-pics) had me excited for the content of the sessions that would be held, all with some kind of focus on Open Data, this time based in Manchester.
