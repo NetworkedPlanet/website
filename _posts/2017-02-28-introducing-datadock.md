@@ -14,6 +14,7 @@ tags:
   - linked data
   - cloud service
   - github
+  - datadock-intro
 ---
 
 So you want to publish some data, what do you do next? As we've mentioned before, [publishing data shouldn't cost the earth](/blog/2015/08/10/opening-up-your-data.html), but that there are some technical challenges to be faced when we want that data to be discoverable, accessible and usable. 
@@ -54,3 +55,7 @@ If you're interested in having a play around, head on over to [DataDock.io](http
 
 
 ![DataDock logo]({{page.imgdir}}DataDock_ColourTrans.png){:height="149px" width="400px" .img-medium .img-responsive .center-block .bordered-image}
+
+
+{: .well .text-center}
+This article is part of the [Data Dock Intro series](/blog/tags/datadock-intro/)
