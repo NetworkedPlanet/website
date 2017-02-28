@@ -34,7 +34,7 @@ One of our main aims is to try and eliminate as much as possible all the jargon 
 
 ### Keep hold of your data
  
-All the standards-complaint published data produced by DataDock is pushed to your GitHub account. You keep hold of the data, you can turn off DataDock's access any time you wish, and keep all the data produced.
+All the standards-compliant data produced by DataDock is published to your GitHub account. You can turn off DataDock's access any time you wish, and keep all the data it produced.
 
 ### Cloud-based
 
@@ -42,7 +42,7 @@ No need to buy web-hosting, DataDock sits in the cloud and we will always provid
 
 ### Get involved
 
-We've got hundreds of ideas for enhancements and features for DataDock, and we'd like to work on the things you want most. Get involved on by requesting features or voting up existing requests on our [support site](https://github.com/NetworkedPlanet/datadock/issues).
+We've got hundreds of ideas for enhancements and features for DataDock, and we'd like to work on the things you want most. Get involved on by requesting features or up-voting existing requests on our [DataDock support site](https://github.com/NetworkedPlanet/datadock/issues).
 
 ### It's for the geeks too
 
