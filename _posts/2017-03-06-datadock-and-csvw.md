@@ -5,8 +5,8 @@ excerpt: Getting into the technical breakdown of how DataDock works, first we'll
 date:   2017-03-01 10:00:00
 author: Jen
 imgdir:	/assets/images/blog/datadock/
-image: /assets/images/blog/datadock_bw.png
-imagealt: DataDock Monochrome Logo
+image: /assets/images/blog/datadock.png
+imagealt: DataDock Logo
 comments: true
 tags:
   - datadock
