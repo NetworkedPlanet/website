@@ -24,13 +24,11 @@ The first stage in [DataDock](http://datadock.io)'s processing pipeline is to ta
  
 ![CSV columns list]({{page.imgdir}}csvw/columns.png){: .img-medium .img-responsive .center-block .bordered-image}
 
-The W3C's [CSV on the Web Working Group](https://www.w3.org/2013/csvw/wiki/Main_Page) publish specifications relating to describing tabular data. This makes it the obvious choice for us to adopt this standard when we pull the CSV into the DataDock processing pipeline.
+The W3C's [CSV on the Web Working Group](https://www.w3.org/2013/csvw/wiki/Main_Page) developed specifications relating to describing tabular data. This makes it the obvious choice for us to adopt this standard when we pull the CSV into the DataDock processing pipeline. There is now a [W3C CSV on the Web Community Group that is open to all](https://www.w3.org/community/csvw/), where there is a focus on discussion and support for implementors, publishers and spec developers to share experience with CSVW and related ideas. 
 
-A shortened example of one of the [metadata JSON files](https://github.com/jennet/odcamp-demo/blob/gh-pages/csv/Bristol_Monuments.csv/Bristol_Monuments.csv-metadata.json) produced during the import of a CSV into DataDock is shown below:
+Using the CSVW specification, DataDock takes the information entered by the user (e.g. title / description / selected license) and combines it with the list of columns to produce a metadata JSON file. An example of one of the [metadata JSON files](https://github.com/jennet/odcamp-demo/blob/gh-pages/csv/Bristol_Monuments.csv/Bristol_Monuments.csv-metadata.json) produced during the import of a CSV into DataDock is shown below (the example below only shows the first four of the columns for brevity):
 
 <script src="https://gist.github.com/jennet/1b681faa594f86a2a417302c96600575.js"></script>
-
-As you can see, dataset information such as the title, description, license and keywords are included in the metadata.json file, as well as a list of objects that describe each of the columns (the example above only shows the first four of the columns for brevity). 
 
 In its current release, DataDock auto-creates the column definitions, creating the machine-friendly <code>name</code>, and <code>property_url</code> from each column's header value, which is set as the initial value in <code>titles</code>. DataDock currently asks for user input only when it comes to the column's <code>datatype</code>, although it does make a simple guess at the datatype based on the values of the first non-header row of the selected CSV. Future upgrades to the DataDock platform will make use of the more extended definitions of the CSVW standard.
 
