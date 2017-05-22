@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Digital Social Innovation (DSI) involves people, and it is time for evaluation
-excerpt: Blog about news in the Digital Social Innovation Communities
+excerpt: We have to start measuring the impact of the efforts to digitally socially innovate (just like we do in the rest of the always innovative, social service world).
 date:   2017-05-19 10:00:00
 author: Lea
 imgdir:	/assets/images/blog/dsi/
