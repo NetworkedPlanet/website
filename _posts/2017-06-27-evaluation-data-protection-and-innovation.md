@@ -56,4 +56,10 @@ Timings: 13:30 – 18:00 (networking drinks from 16:45)
    onclick="trackOutboundLink('https://www.eventbrite.co.uk/e/evaluation-data-protection-and-innovation-tickets-35720334482?ref=ebtnebregn'); return false;">Sign Up On Eventbrite</a>
 </p>
 
-![TSIP]({{page.imgdir}}tsip_logo.jpg){: .img-medium .img-responsive .center-block .bordered-image}
+{:.imgtable}
+|           |   |   |  
+:-------------------------:|:-------------------------:|:-------------------------:
+![TSIP]({{page.imgdir}}tsip_logo.jpg){: .img-medium .img-responsive .bordered-image}  |  ![TSIP]({{page.imgdir}}digi_catapult_logo.png){: .img-medium .img-responsive .bordered-image} | ![Networked Planet]({{page.imgdir}}Networked_Planet_logo.png){: .img-medium .img-responsive .bordered-image} 
+
+ 
+
