@@ -6,6 +6,12 @@ date:   2017-06-27 13:00:00
 author: Lea
 imgdir:	/assets/images/blog/tsip/
 comments: true
+event: workshop
+event_date: 2017-09-20 13:30
+event_time: 13:30 – 18:00
+event_location: TechHub London, EC2Y 9AR
+event_price: £60 early bird
+event_ticket_url: https://www.eventbrite.co.uk/e/evaluation-data-protection-and-innovation-tickets-35720334482
 tags:
   - training
   - workshop
@@ -52,8 +58,8 @@ Workshop date: **20th September**
 Timings: 13:30 – 18:00 (networking drinks from 16:45)
 
 <p class="text-center">
-<a class="btn btn-primary  btn-lg" href="https://www.eventbrite.co.uk/e/evaluation-data-protection-and-innovation-tickets-35720334482?ref=ebtnebregn"
-   onclick="trackOutboundLink('https://www.eventbrite.co.uk/e/evaluation-data-protection-and-innovation-tickets-35720334482?ref=ebtnebregn'); return false;">Sign Up On Eventbrite</a>
+<a class="btn btn-primary  btn-lg" href="https://www.eventbrite.co.uk/e/evaluation-data-protection-and-innovation-tickets-35720334482"
+   onclick="trackOutboundLink('https://www.eventbrite.co.uk/e/evaluation-data-protection-and-innovation-tickets-35720334482'); return false;">Book On Eventbrite</a>
 </p>
 
 {:.imgtable}
