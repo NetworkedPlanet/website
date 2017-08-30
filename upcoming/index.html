@@ -1,0 +1,22 @@
+---
+layout: page
+title: NetworkedPlanet Upcoming Events
+---
+
+<h2>Upcoming Events</h2>
+
+{% assign curDate = site.time | date: '%s' %}
+
+<div class="row">
+    {% for post in site.posts %}
+        {% if post.event != null %}
+            {% assign postStartDate = post.event_date | date: '%s' %}
+            {% if postStartDate >= curDate %}
+                <div class="">
+                    {% include teaser-event.html post=post %}
+                </div>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</div>
+

@@ -4,7 +4,7 @@ title: SharePoint Module 3.2 Hotfix 5 released
 tag: hotfix
 category: Product Announcements
 tag: sharepoint module
-author: jen
+author: JW
 ---
 <div id="_mcePaste">A new hotfix package is available for version 3.2 of the TMCore SharePoint Module.</div>
 

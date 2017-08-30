@@ -1,0 +1,104 @@
+.tag_list li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+.tag_list {
+	padding: 0px;
+	margin-bottom: 10px;
+}
+
+.archive_list {
+	padding: 0px;
+	list-style-type: none;
+}
+
+.bordered-image {
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+
+.header-image {
+	margin-right: 1em;
+	margin-bottom: 0.5ex;
+}
+
+/* Social media sidebar from http://www.cssportal.com/blog/css-social-media-sidebar/ */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+[class*="entypo-"]:before {
+  font-family: "entypo", "sans-serif"
+}
+
+#social {
+  position:fixed;
+  left: 0;
+  top: 150px;
+}
+
+#social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+
+#social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+
+#social a:hover span {
+   left: 100%;
+}
+
+#social ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#social a[class*="facebook"],
+#social a[class*="facebook"]:hover,
+#social a[class*="facebook"] span { background: #3b5998; }
+
+#social a[class*="twitter"],
+#social a[class*="twitter"]:hover,
+#social a[class*="twitter"] span { background: #00aced; }
+
+#social a[class*="gplus"],
+#social a[class*="gplus"]:hover,
+#social a[class*="gplus"] span { background: #dd4b39; }  
+
+#social a[class*="linkedin"],
+#social a[class*="linkedin"]:hover,
+#social a[class*="linkedin"] span { background: #007bb6; }  
+
+#social a[class*="instagrem"],
+#social a[class*="instagrem"]:hover,
+#social a[class*="instagrem"] span { background: #517fa4; }  
+
+#social a[class*="stumbleupon"],
+#social a[class*="stumbleupon"]:hover,
+#social a[class*="stumbleupon"] span { background: #eb4924; }  
+
+#social a[class*="pinterest"],
+#social a[class*="pinterest"]:hover,
+#social a[class*="pinterest"] span { background: #cc2127; }  
+
+#social a[class*="flickr"],
+#social a[class*="flickr"]:hover,
+#social a[class*="flickr"] span { background: #ff0084; }  
+
+#social a[class*="tumblr"],
+#social a[class*="tumblr"]:hover,
+#social a[class*="tumblr"] span { background: #32506d; }

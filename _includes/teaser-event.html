@@ -1,0 +1,32 @@
+<div class="media">
+	<div class="media-left">
+		<a href="{{ post.url }}">
+			{% if post.icon %}
+				<img class="media-object" src="{{ post.icon }}" alt="{{ post.iconalt }}" width="64" />
+			{% elsif post.image %}
+				<img class="media-object" src="{{ post.image }}" alt="{{ post.imagealt }}" width="64" />
+			{% else %}
+				<img class="media-object" src="/assets/images/blog/np_logo.png" />
+			{% endif %}
+		</a>
+	</div>
+	<div class="media-body">
+		<h3 class="media-heading"><a href="{{ post.url }}">{{post.title}}</a></h3>
+		<p>{{ post.excerpt  }}</p>
+		<dl class="event-details">
+			<dt>Date:</dt>
+				<dd>{{ post.event_date | date_to_string}}</dd>
+			<dt>Time:</dt>
+			<dd>{{ post.event_time }}</dd>
+			<dt>Tickets:</dt>
+			<dd>{{ post.event_price }}</dd>
+			<dt>Location:</dt>
+			<dd>{{ post.event_location }}</dd>
+		</dl>
+		<div>
+			<a href="{{ post.url }}" class="btn btn-secondary">Read Event Details</a>
+			<a href="{{ post.event_ticket_url }}" class="btn btn-primary">Book Tickets</a>
+
+		</div>
+	</div>
+</div>

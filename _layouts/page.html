@@ -3,16 +3,18 @@
 
   {% include head.html %}
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar-fixed-top">
 
     {% include header.html %}
-    {% include breadcrumb.html %}
+	<div class="spacer-top"></div>
+	{% include breadcrumb.html %}
     <div class="container">
         {{ content }}
         <div class="spacer2">&nbsp;</div>
     </div>
     
     {% include footer.html %}
+    {% include footer-scripts.html %}
 
   </body>
 
