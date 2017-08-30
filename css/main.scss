@@ -108,7 +108,21 @@ $np-blue: #005680;
   margin: 0;
   text-transform: capitalize;
 }
-
+.pending h2 {
+ /* font-family: Georgia, Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif; */
+  font-family: Cabin, san-serif;
+}
+.pending .cta {
+  background: #fff;
+  padding: 1em 0;
+  margin: 1em 0;
+}
+.pending .cta img {
+  height:200px;
+}
+.pending .about {
+  padding-top:2em;
+}
 .homepage #row-2 h2,
 .homepage #row-3 h2 {
   text-align: left;
