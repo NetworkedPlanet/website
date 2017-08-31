@@ -6,36 +6,9 @@ mailchimp: true
     <section id="intro" class="sn-section pending">
         <div class="container-fluid homepage">
 
-			<div class="row" id="row-2">
-				<div class="col-sm-6">
-					<p class="intropara lead">
-						We provide the <span class="highlight">knowledge, experience and tools</span>
-						to help organisations
-						of all sizes make the best use of their data,
-						content and knowledge. We connect
-						people with the information they need, when they need it.
-					</p>
-					<div class="text-center">
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="/services">Find out more</a>
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="/upcoming">Upcoming Events</a>
-					</div>
-				</div>
-				<div class="col-sm-6 text-justify">
-					<h2>From the blog:</h2>
-					<ul class="news">
-						{% for post in site.posts limit:2 %}
-						<li>
-							{% include teaser-post.html post=post %}
-						</li>
-						{% endfor %}
-					</ul>
-					<p class="text-right"><a href="/blog" title="More blog posts">More &raquo;</a> </p>
-				</div>
-			</div>
-
 			<div class="spacer"></div>
 
-			<div class="row cta home-mid-row">
+			<div class="row cta">
 
 				<div class="col-sm-4">
 					<a href="/details.html#dataplatform" title="Data Platform">
@@ -62,6 +35,35 @@ mailchimp: true
 					<p>Large or small, we help you gain control of your data</p>
 				</div>
 
+			</div>
+
+			<div class="spacer"></div>
+
+			<div class="row home-mid-row" id="row-2">
+				<div class="col-sm-6">
+					<p class="intropara lead">
+						We provide the <span class="highlight">knowledge, experience and tools</span>
+						to help organisations
+						of all sizes make the best use of their data,
+						content and knowledge. We connect
+						people with the information they need, when they need it.
+					</p>
+					<div class="text-center">
+						<a class="btn page-scroll btn-lg btn-primary text-center" href="/services">Find out more</a>
+						<a class="btn page-scroll btn-lg btn-primary text-center" href="/upcoming">Upcoming Events</a>
+					</div>
+				</div>
+				<div class="col-sm-6 text-justify">
+					<h2>From the blog:</h2>
+					<ul class="news">
+						{% for post in site.posts limit:2 %}
+						<li>
+							{% include teaser-post.html post=post %}
+						</li>
+						{% endfor %}
+					</ul>
+					<p class="text-right"><a href="/blog" title="More blog posts">More &raquo;</a> </p>
+				</div>
 			</div>
 
 			<div class="spacer"></div>
