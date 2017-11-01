@@ -3,17 +3,20 @@
 
   {% include head.html %}
 
-  <body data-spy="scroll" data-target=".navbar-fixed-top">
+  <body>
 
-    {% include homepage-header.html %}
+    {% include header.html %}
+
+    <!-- no breadcrumb on homepage -->
 
     <div class="container">
         {{ content }}
-        <div class="spacer2">&nbsp;</div>
+        <div class="double-spacer">&nbsp;</div>
     </div>
+
+    {% include footer.html %}
 
     {% include footer-scripts.html %}
 
     </body>
-
 </html>

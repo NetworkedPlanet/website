@@ -1,87 +1,128 @@
 ---
 layout: homepage
-mailchimp: true
 ---
-<!-- Homepage Section -->
-    <section id="intro" class="sn-section pending">
-        <div class="container-fluid homepage">
+<!-- temporary test page -->
 
-			<div class="row" id="row-2">
-				<div class="col-sm-6">
-					<p class="intropara lead">
-						We provide the <span class="highlight">knowledge, experience and tools</span>
-						to help organisations
-						of all sizes make the best use of their data,
-						content and knowledge. We connect
-						people with the information they need, when they need it.
-					</p>
-					<div class="text-center">
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="/services">Find out more</a>
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="/upcoming">Upcoming Events</a>
-					</div>
-				</div>
-				<div class="col-sm-6 text-justify">
-					<h2>From the blog:</h2>
-					<ul class="news">
-						{% for post in site.posts limit:2 %}
-						<li>
-							{% include teaser-post.html post=post %}
-						</li>
-						{% endfor %}
-					</ul>
-					<p class="text-right"><a href="/blog" title="More blog posts">More &raquo;</a> </p>
-				</div>
-			</div>
 
-			<div class="spacer"></div>
 
-			<div class="row cta home-mid-row">
+<div id="homepage-slider" class="slider-pro">
+    <div class="sp-slides">
+        <div class="sp-slide">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank.gif"
+                 data-src="/assets/images/slider/image1_medium.jpg"
+                 data-retina="/assets/images/slider/image1_large.jpg"/>
 
-				<div class="col-sm-4">
-					<a href="/details.html#dataplatform" title="Data Platform">
-						<img id="" src="/assets/images/homepage/logos/dataplatform.png" alt="Data Platform"/>
-					</a>
-					<h2>Data Platform</h2>
-					<p>Data management and publishing tool suite</p>
-				</div>
-
-				<div class="col-sm-4">
-
-					<a href="/details.html#datadock" title="DataDock">
-						<img id="" src="/assets/images/homepage/logos/datadock.png" alt="DataDock"/>
-					</a>
-					<h2>DataDock</h2>
-					<p>Free cloud-hosted data publishing portal</p>
-				</div>
-
-				<div class="col-sm-4">
-					<a href="/details.html#consultancy" title="Consultancy">
-						<img id="" src="/assets/images/homepage/logos/consultancy.png" alt="Consultancy"/>
-					</a>
-					<h2>Projects & Consultancy</h2>
-					<p>Large or small, we help you gain control of your data</p>
-				</div>
-
-			</div>
-
-			<div class="spacer"></div>
-
-			<div class="row" id="row-3">
-				<div class="col-sm-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EbpRofMqzF0"></iframe>
-					</div>
-				</div>
-				<div class="col-sm-6 text-justify about">
-					<p>At Networked Planet we're committed to using our years of experience with information management
-						to help companies that are helping others. Our "data for good" projects focus on helping
-						charities and voluntary organisations be more effective in their use of data.</p>
-					<p>We offer <a href="/services">consultancy</a> and <a href="/training">training</a> to help organisations tackle digital information management
-						challenges with confidence. We also build standards-based open source <a href="/products">software and tools</a>.</p>
-					<p>Every project should be built from the ground up, tailor-made to your needs.
-						To start that conversation just <a href="#contact">drop us a line</a>. </p>
-				</div>
-			</div>
-			<div class="spacer"></div>
+            <div class="sp-caption">Slide 1 caption: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
         </div>
-    </section>
+
+        <div class="sp-slide">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank.gif"
+                 data-src="/assets/images/slider/image2_medium.jpg"
+                 data-retina="/assets/images/slider/image2_large.jpg"/>
+
+            <div class="sp-caption">Slide 2 caption: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+        </div>
+
+        <div class="sp-slide">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank.gif"
+                 data-src="/assets/images/slider/image3_medium.jpg"
+                 data-retina="/assets/images/slider/image3_large.jpg"/>
+
+            <div class="sp-caption">Slide 3 caption: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+        </div>
+
+        <div class="sp-slide">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank.gif"
+                 data-src="/assets/images/slider/image4_medium.jpg"
+                 data-retina="/assets/images/slider/image4_large.jpg"/>
+
+            <div class="sp-caption">Slide 4 caption: Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</div>
+        </div>
+
+    </div>
+
+    <div class="sp-thumbnails">
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+                <img class="sp-thumbnail-image" src="/assets/images/slider/image1_thumb.jpg"/>
+            </div>
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">Linked Data</div>
+            </div>
+        </div>
+
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+                <img class="sp-thumbnail-image" src="/assets/images/slider/image2_thumb.jpg"/>
+            </div>
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">Training & Consultancy</div>
+            </div>
+        </div>
+
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+                <img class="sp-thumbnail-image" src="/assets/images/slider/image3_thumb.jpg"/>
+            </div>
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">DataDock</div>
+            </div>
+        </div>
+
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-image-container">
+                <img class="sp-thumbnail-image" src="/assets/images/slider/image4_thumb.jpg"/>
+            </div>
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">Support</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="row">
+    <h2>SOme other bit</h2>
+</div>
+
+<div class="row">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat accumsan accumsan. Nunc fringilla magna ut nisl elementum, in laoreet est fringilla. Phasellus quis lorem elementum, eleifend enim eu, porta enim. Nullam placerat et eros eu porta. Vivamus massa tellus, fermentum vel libero sit amet, elementum lacinia libero. Donec ornare mi ut dolor lobortis aliquam. Proin fermentum tempor erat, ut sodales leo ornare ut.
+
+        Sed a nunc at velit accumsan ultricies. Curabitur rutrum vel purus sed ultrices. Nam et magna ligula. Aliquam nulla sem, tristique vel mi at, vestibulum consequat sem. Nulla posuere egestas nibh. Donec et orci augue. In at molestie leo, sed lobortis ipsum.
+
+        Sed egestas iaculis turpis a dictum. Aliquam id purus vel diam tincidunt ultrices. Cras at enim sed turpis mattis semper. Morbi non ipsum sed purus bibendum vestibulum. Donec posuere accumsan dolor, sed venenatis ipsum sodales eget. Sed vel egestas lacus. In hac habitasse platea dictumst. In dictum lacinia ipsum ac volutpat.
+
+        Fusce at ex sodales, pulvinar dolor a, egestas purus. Nullam condimentum tempus tortor. Vivamus porttitor accumsan tincidunt. Nunc risus elit, elementum vel enim sit amet, accumsan venenatis neque. Nullam sed turpis in enim pulvinar feugiat et a nisi. Aenean in risus a dolor pulvinar consectetur. Nam placerat metus quis dolor consequat, ac molestie sem aliquam. Vestibulum sem mauris, bibendum id eleifend vel, semper vel augue. Integer facilisis augue at odio ultricies, nec feugiat enim auctor. Pellentesque lorem elit, pretium porta urna pulvinar, convallis laoreet neque. Aliquam ut rhoncus nulla, sed scelerisque ex. Quisque in dui et ante consequat facilisis. Etiam vehicula ligula ante, at lacinia mi luctus eu. Quisque facilisis tincidunt purus, vitae porta metus lacinia sed. Donec quam nulla, semper in tempus at, feugiat ut ante.
+
+        Maecenas at massa lectus. Nullam mollis dui dignissim tellus semper efficitur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed viverra diam quis lorem efficitur fringilla. Suspendisse sit amet erat pulvinar, molestie sapien ut, elementum augue. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer malesuada luctus dolor quis aliquam. Suspendisse dictum nisi leo, ac faucibus velit tristique in. Integer velit ex, dictum sed sem a, aliquet auctor justo. Nulla facilisi. Duis at tellus venenatis, bibendum purus suscipit, interdum elit. Suspendisse at rhoncus augue. Maecenas consectetur, neque dignissim luctus suscipit, mauris lacus finibus mi, non imperdiet nibh velit sit amet sapien. Donec nibh lorem, dignissim in lorem non, efficitur porta nisi. Donec iaculis laoreet urna ut faucibus.
+
+        Phasellus suscipit lacus id nibh ultrices aliquam id a tellus. In non fermentum magna. Donec rutrum mattis cursus. Duis ac nibh consequat, elementum risus sed, blandit enim. Morbi pulvinar sapien vitae turpis ornare gravida nec in turpis. Sed mollis, sapien et cursus pellentesque, purus magna tristique magna, id mattis felis risus at risus. Aenean hendrerit, purus eu placerat fringilla, tortor diam elementum est, non tristique dolor augue nec nulla. Quisque molestie sollicitudin urna id cursus.
+
+        Mauris accumsan est cursus sapien pulvinar, nec sodales lorem molestie. Aenean rhoncus malesuada finibus. Suspendisse malesuada eu mi non lacinia. In semper tortor eget laoreet facilisis. Vivamus non nibh a felis ullamcorper tincidunt. Sed vehicula convallis velit, vel pulvinar nisi. Sed pretium venenatis sagittis. Donec euismod nibh nisl, eleifend rhoncus lacus vestibulum a. Quisque semper nisl id quam euismod rhoncus. In maximus eleifend neque, eu sodales tellus tempor ac. Pellentesque volutpat pellentesque odio, id dictum turpis lacinia sed. Etiam sit amet neque vitae sem porttitor posuere. In aliquet fringilla suscipit. Nulla varius risus eget sodales consectetur. Donec non lacus orci.
+
+        Etiam tincidunt ac nisl ut vehicula. Curabitur dictum massa eu gravida tincidunt. Aliquam rutrum condimentum ipsum ac commodo. Quisque mattis ipsum pellentesque, pharetra velit in, varius augue. Sed egestas leo a tellus rhoncus interdum. Vestibulum a est sit amet libero ornare malesuada sed a ante. Nullam mattis massa tempor dolor fringilla euismod. Aliquam erat volutpat. Nunc ut nibh at nisl fermentum feugiat et quis magna. Morbi in justo lacus.
+
+        Fusce sit amet odio non nisl sodales volutpat non eget enim. Sed et urna sapien. Nam quis sem id ex interdum malesuada ac id quam. Etiam eleifend, massa in feugiat rhoncus, nisl augue cursus risus, non consequat mi justo a arcu. Sed id sapien vel risus venenatis elementum ut vel nisi. Pellentesque viverra lacus eget urna eleifend euismod. Sed enim erat, porta sit amet nulla a, cursus hendrerit lacus. Curabitur a nisi vel enim convallis malesuada sed at metus.
+
+        Fusce luctus blandit dolor, vel pellentesque urna sodales ultrices. Donec sed diam faucibus, varius nunc eget, ornare felis. Curabitur euismod lorem sit amet porttitor sollicitudin. Nullam scelerisque, justo non tempus malesuada, risus purus tristique ante, et porttitor tortor neque vel dui. Morbi eget justo et elit feugiat varius vitae id sapien. In non luctus ipsum. Donec laoreet nunc nec auctor hendrerit. Nulla vitae nisl aliquet, efficitur ex sed, sodales eros. In dictum turpis id ante scelerisque feugiat. Nam ultricies finibus erat, ut dapibus orci sodales in. Ut scelerisque porttitor vulputate. Nulla ac magna interdum purus porttitor volutpat. Etiam in turpis venenatis, vulputate diam in, porttitor metus. Aenean eleifend iaculis augue quis gravida. Ut eu ante sit amet nibh gravida tempus eleifend et ipsum. Morbi sit amet interdum velit.
+
+        Praesent enim lacus, pellentesque at tellus a, gravida laoreet erat. Pellentesque eu condimentum dolor. Nunc laoreet, eros nec lacinia gravida, quam sem efficitur quam, nec mattis lorem turpis sed dui. Aenean gravida tincidunt sapien, ac tristique dui euismod tincidunt. Curabitur egestas justo est, in sodales nisl ullamcorper nec. In placerat scelerisque enim, quis dictum felis rhoncus in. Aliquam gravida nisi massa, sed placerat nisi vulputate vitae. Cras porta lacus arcu, at feugiat sapien pulvinar vitae. Sed tempor nibh sed consectetur molestie. Etiam sodales tortor magna, vitae pharetra metus viverra eget. Duis pellentesque volutpat varius. Pellentesque a augue volutpat, efficitur eros sit amet, semper massa.
+
+        Quisque dictum magna eu ultrices congue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nullam pharetra elit leo, at tempor libero hendrerit nec. In hac habitasse platea dictumst. Etiam tincidunt auctor nibh vitae mattis. Pellentesque eu tempus mi, in dignissim odio. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse sed lectus ipsum. Maecenas molestie purus facilisis posuere interdum. Curabitur maximus lorem in turpis interdum malesuada. Nunc aliquet felis elit, eget molestie velit tristique eget. Curabitur euismod id diam vel convallis.
+
+        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec vulputate tellus diam, at egestas neque sagittis ut. Integer iaculis odio at viverra tempus. Phasellus interdum sit amet leo sed dapibus. Etiam facilisis dui quis nibh tempus, non ornare nibh bibendum. Proin aliquet tortor quis gravida volutpat. Morbi semper ligula ac aliquet consequat. Aenean tempor viverra venenatis. Quisque dapibus massa velit, sed tempus nulla gravida vitae.
+
+        Sed eleifend enim non lacus interdum, vel fringilla quam auctor. Morbi convallis quis orci ut maximus. Sed aliquam tincidunt lacus sed vestibulum. Quisque vehicula euismod imperdiet. Nulla magna neque, euismod vitae vestibulum quis, scelerisque quis libero. Sed iaculis ultrices lectus, bibendum fermentum urna molestie ut. Aenean dapibus sapien a lobortis dignissim.
+
+        Mauris hendrerit purus ut dapibus faucibus. Donec euismod leo arcu. Fusce orci felis, porttitor eu dapibus vel, dictum quis velit. Fusce vel quam accumsan, mattis nisi sit amet, consequat risus. Ut ultricies condimentum eros scelerisque laoreet. Nunc tristique efficitur lacinia. Etiam consequat urna ac sodales bibendum. Sed in odio sit amet mauris feugiat suscipit in quis sapien. Morbi volutpat ultricies fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+        Maecenas iaculis enim justo. Morbi ac leo sapien. Morbi quis accumsan lorem. Proin augue lacus, molestie eget ante sed, fringilla tempor justo. Praesent arcu enim, egestas a dignissim ut, tincidunt a metus. Etiam a velit malesuada risus tristique cursus sit amet et leo. Mauris rutrum ex eu purus vehicula, fermentum commodo metus venenatis. Quisque non hendrerit turpis.
+
+        Fusce at lorem fermentum metus pharetra luctus. Curabitur vel malesuada metus. In aliquet, sapien sed hendrerit consectetur, mi massa porttitor magna, in congue nunc libero eu massa. Nam dignissim vulputate fringilla. Suspendisse ut velit eget felis sagittis vestibulum eget id eros. Aenean non arcu eu risus suscipit congue. Praesent malesuada feugiat nisi, pulvinar laoreet ipsum vulputate eget.
+
+        Ut tincidunt a odio id sodales. Maecenas nec condimentum justo. Duis ultrices sapien eu est congue suscipit. Cras sit amet leo sed nisl efficitur pellentesque nec ut massa. Vestibulum a cursus felis, non maximus nunc. Donec tincidunt maximus mi ac lacinia. Aenean rutrum mollis velit in tempor. Morbi congue tellus nunc, eget sollicitudin ipsum feugiat eget. Morbi gravida in lacus sit amet rhoncus. Duis diam libero, dapibus eleifend leo nec, iaculis egestas risus.
+
+        Phasellus molestie elementum nulla dapibus ultricies. Curabitur commodo mattis dapibus. Sed aliquam orci enim. Sed finibus odio ac tellus sodales sodales. Cras malesuada sit amet elit vel interdum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam vestibulum vel nunc id rhoncus. Vivamus vel luctus velit, faucibus fermentum diam. Ut commodo ligula in vulputate scelerisque. In egestas gravida faucibus.
+
+        Maecenas euismod, urna ut rhoncus malesuada, risus est suscipit justo, vitae porttitor justo erat et lorem. Nulla facilisi. Praesent euismod felis arcu, a placerat leo pharetra vitae. Sed eu eros risus. Phasellus ac magna fringilla, convallis augue ac, lacinia lacus. Curabitur auctor lacus in velit dapibus, sed dapibus quam vehicula. Maecenas nec magna fermentum magna placerat ullamcorper nec in nisi. Cras eleifend risus et tempus semper. Etiam facilisis convallis aliquet. Nullam dignissim nibh eros, sed interdum ante pharetra vestibulum. Maecenas sit amet diam dignissim dui lobortis molestie a non nisl. In elementum risus eu nisl sollicitudin sodales. In dictum nulla vitae ante tempor, ac imperdiet justo auctor. Proin pellentesque consectetur nunc vitae euismod.</p>
+</div>
