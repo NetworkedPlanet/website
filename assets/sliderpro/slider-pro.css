@@ -160,7 +160,7 @@
 	content: '';
 	position: absolute;
 	height: 100%;
-	border-left: 5px solid #62b12f;
+	border-left: 5px solid #FF9933;
 	left: 0;
 	top: 0;
 	margin-left: 13px;
@@ -174,7 +174,7 @@
 	left: 0;
 	top: 50%;
 	margin-top: -8px;
-	border-right: 13px solid #62b12f;
+	border-right: 13px solid #FF9933;
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
 }
@@ -194,7 +194,7 @@
 	content: '';
 	position: absolute;
 	height: 100%;
-	border-left: 5px solid #62b12f;
+	border-left: 5px solid #FF9933;
 	right: 0;
 	top: 0;
 	margin-right: 13px;
@@ -208,7 +208,7 @@
 	right: 0;
 	top: 50%;
 	margin-top: -8px;
-	border-left: 13px solid #62b12f;
+	border-left: 13px solid #FF9933;
 	border-top: 8px solid transparent;
 	border-bottom: 8px solid transparent;
 }
@@ -229,7 +229,7 @@
 	content: '';
 	position: absolute;
 	width: 100%;
-	border-bottom: 5px solid #62b12f;
+	border-bottom: 5px solid #FF9933;
 	top: 0;
 	margin-top: 13px;
 }
@@ -242,7 +242,7 @@
 	left: 50%;
 	top: 0;
 	margin-left: -8px;
-	border-bottom: 13px solid #62b12f;
+	border-bottom: 13px solid #FF9933;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 }
@@ -262,7 +262,7 @@
 	content: '';
 	position: absolute;
 	width: 100%;
-	border-bottom: 5px solid #62b12f;
+	border-bottom: 5px solid #FF9933;
 	bottom: 0;
 	margin-bottom: 13px;
 }
@@ -275,7 +275,7 @@
 	left: 50%;
 	bottom: 0;
 	margin-left: -8px;
-	border-top: 13px solid #62b12f;
+	border-top: 13px solid #FF9933;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 }
@@ -309,17 +309,17 @@
 }
 
 .sp-padding {
-	padding: 10px;
+	padding: 10px 20px;
 }
 
 /* Touch Swipe
 --------------------------------------------------*/
 .sp-grab {
-	cursor: url(images/openhand.cur), move;
+	cursor: url(css/images/openhand.cur), move;
 }
 
 .sp-grabbing {
-	cursor: url(images/closedhand.cur), move;
+	cursor: url(css/images/closedhand.cur), move;
 }
 
 .sp-selectable {

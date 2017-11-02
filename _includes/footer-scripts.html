@@ -24,14 +24,17 @@
     </script>
 
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- jQuery -->
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+<script src="/assets/hexagon/js/jquery-2.1.0.min.js"></script>
+
 <!-- Bootstrap plugins -->
 <script src="{{ '/assets/javascripts/bootstrap.min.js' | prepend: site.baseurl }}"></script>
 <script src="{{ '/assets/javascripts/jquery.easing.min.js' | prepend: site.baseurl }}"></script>
 
 
-
+<!-- hexagons -->
+<script src="/assets/hexagon/js/hexagons.min.js"></script>
 
 <!-- sliderPro -->
 <script src="/assets/javascripts/jquery.sliderPro.min.js"></script>
@@ -39,15 +42,15 @@
     $( document ).ready(function( $ ) {
         $( '#homepage-slider' ).sliderPro({
             width: 800,
-            height: 400,
+            height: 250,
             orientation: 'vertical',
             loop: false,
-            arrows: true,
+            arrows: false,
             buttons: false,
             thumbnailsPosition: 'right',
             thumbnailPointer: true,
-            thumbnailWidth: 290, /* thumbnail container width */
-            thumbnailHeight: 100, /* thumbnail container height */
+            thumbnailWidth: 190, /* thumbnail container width */
+            thumbnailHeight: 60, /* thumbnail container height */
             breakpoints: {
                 800: {
                     thumbnailsPosition: 'bottom',

@@ -35,8 +35,6 @@ dd {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
-
-    /* the rest of your styling */
 }
 
 .spacer {
@@ -55,51 +53,11 @@ dd {
 	width: 2em;
 }
 
-h2 {
-  font-family: Cabin, san-serif;
-}
-
 .caption h2 {
   font-size: 1.1em;
   padding: 10px;
   margin: 0;
   text-transform: capitalize;
-}
-.draft .cta a {
-  color:#000;
-}
-.draft .cta a:hover {
-  color:#ea9417;
-  text-decoration: none;
-}
-.draft .cta img {
-  height:200px;
-}
-.draft .about {
-  padding-top:2em;
-}
-.homepage #row-2 h2,
-.homepage #row-3 h2 {
-  text-align: left;
-}
-.homepage #row-3 h2 {
-  margin-top: 0;
-}
-.homepage ul.news,
-.homepage ul.training {
-  list-style: none;
-  margin:0;
-  padding:0;
-}
-.homepage ul.news li,
-.homepage ul.training li {
-  margin: 0;
-  padding: 0;
-  text-align: left;
-}
-.homepage ul.news li h3.media-heading,
-.homepage ul.training li h3.media-heading {
-  font-size:1.2em;
 }
 
 address {
@@ -306,9 +264,8 @@ body {
 
 
 .intropara {
-  font-family: 'Cabin', sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.5;
-  margin-top: 50px;
 }
 
 .highlight {
@@ -372,14 +329,15 @@ body {
 }
 
 /*
-
-SLIDER PRO
+Slider Pro http://bqworks.com/slider-pro/
  */
 
+#homepage-slider .sp-static h2 {
+  font-family: "Open Sans", san-serif;
 
-/* Example 5 */
-
-#homepage-slider .sp-thumbnail {
+}
+#homepage-slider .sp-static p {
+  font-size: 1.3em;
 
 }
 #homepage-slider .sp-thumbnail-image-container {
@@ -398,17 +356,16 @@ SLIDER PRO
   width: 170px;
   float: right;
   padding: 8px;
-  background-color: #F0F0F0;
+  background-color: #e7e7e7; /*#F0F0F0;*/
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 100%;
+  height: 100px;
 }
 
 #homepage-slider .sp-thumbnail-title {
-  font-family: Cabin, san-serif;
-  vertical-align: middle;
-  margin-bottom: 5px;
-  text-transform: uppercase;
+  font-family: "Open Sans", san-serif;
+  font-size: 1.6em;
+  text-align: right;
   color: #333;
 }
 
@@ -437,5 +394,172 @@ SLIDER PRO
 
   #homepage-slider .sp-thumbnail-description {
     display: none;
+  }
+}
+
+/*
+  Sullivan buttons: https://codepen.io/daviddarnes/pen/VLXxMa
+
+* {
+  box-sizing: border-box;
+}
+
+.phone {
+  background: #139675;
+}
+.phone:hover {
+  background: #0d6952;
+}
+.phone:active,
+.phone:focus {
+  background: #083b2e;
+}
+.phone:after {
+  content: "\F095";
+}
+.phone:hover:after {
+  -webkit-animation: wiggle .05s alternate ease infinite;
+  animation: wiggle .05s alternate ease infinite;
+}
+.email {
+  background: #C673B3;
+}
+.email:hover {
+  background: #b74f9f;
+}
+.email:active,
+.email:focus {
+  background: #963d82;
+}
+.email:after {
+  content: "\F0E0";
+}
+.email:hover:after {
+  -webkit-animation: none;
+  -webkit-transform: skew(-20deg);
+  animation: none;
+  transform: skew(-20deg);
+  text-indent: .1em;
+}
+.search:after {
+  content: "\f002";
+}
+.search:hover:after {
+  -webkit-animation: none;
+  -webkit-transform: scale(1.4);
+  animation: none;
+  transform: scale(1.4);
+}
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+
+  appearance: button;
+}
+
+ */
+#homepage-slider .button,
+a.button {
+  display: inline-block;
+  font-family: "Open Sans", san-serif;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: .8em 1.4em;
+  padding-right: 4.7em;
+  background: #009ED8;
+  border: none;
+  color: white;
+  transition: .2s;
+  min-width: 15em;
+  text-decoration: none;
+}
+
+#homepage-slider .button:before,
+#homepage-slider .button:after,
+a.button:before,
+a.button:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: inherit;
+  padding-bottom: inherit;
+  width: 2.8em;
+  content: "\00a0";
+  font-family: 'FontAwesome', sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  transition: .2s;
+  transform-origin: 50% 60%;
+}
+#homepage-slider .button:before,
+a.button:before {
+  background: rgba(0, 0, 0, 0.1);
+}
+#homepage-slider .button:hover,
+a.button:hover {
+  background: #0079a5;
+}
+#homepage-slider .button:active,
+#homepage-slider .button:focus,
+a.button:active,
+a.button:focus {
+  background: #002e3f;
+  outline: none;
+}
+#homepage-slider .arrow,
+a.arrow {
+  background: #FF8000;
+}
+#homepage-slider .arrow:hover,
+a.arrow:hover {
+  background: #FF9933;
+}
+#homepage-slider .arrow:active,
+#homepage-slider .arrow:focus,
+a.arrow:active,
+a.arrow:focus {
+  background: #FFAD5C;
+}
+#homepage-slider .arrow:after,
+a.arrow:after {
+  content: "\F054";
+}
+#homepage-slider .arrow:hover:after,
+a.arrow:hover:after {
+  -webkit-animation: bounceright .3s alternate ease infinite;
+  animation: bounceright .3s alternate ease infinite;
+}
+@-webkit-keyframes bounceright {
+  from {
+    -webkit-transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(3px);
+  }
+}
+@-webkit-keyframes wiggle {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(30deg);
+  }
+}
+@keyframes bounceright {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+@keyframes wiggle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(30deg);
   }
 }
