@@ -17,6 +17,14 @@ $np-blue: #005680;
 
 @import url(http://fonts.googleapis.com/css?family=Cabin:400,600,700);
 
+h2 {
+  margin-top: 0;
+}
+
+article ul {
+  list-style-position: inside;
+}
+
 dd {
   margin-bottom: 0.5em;
   margin-left: 1em;
@@ -35,6 +43,18 @@ dd {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
+}
+.navbar-header,
+.navbar-nav {
+  margin-top: 10px;
+}
+/* hexagon icon margins */
+.hb-lg-margin, .hb-md-margin, .hb-sm-margin, .hb-xs-margin {
+  margin: 15px 0 !important;
+}
+
+.container > ol.breadcrumb  + .container > h2 {
+  margin-top: 0;
 }
 
 .spacer {
@@ -82,6 +102,22 @@ blockquote {
 }
 .imgtable td {
   padding: 1em;
+}
+
+/* Supprt page
+-------------------------------------------------- */
+section#support .cards {
+  margin: 0 auto;
+}
+
+/* Contact page
+-------------------------------------------------- */
+
+section#contact {
+  text-align: center;
+}
+section#contact i {
+  margin-right:0.5em;
 }
 
 /* History timeline styles
@@ -451,34 +487,38 @@ Slider Pro http://bqworks.com/slider-pro/
   transform: scale(1.4);
 }
 
-a.button {
+a.pointer-button {
   -webkit-appearance: button;
   -moz-appearance: button;
-
   appearance: button;
+  border: none;
 }
 
  */
-#homepage-slider .button,
-a.button {
+
+
+
+#homepage-slider .pointer-button,
+a.pointer-button {
   display: inline-block;
   font-family: "Open Sans", san-serif;
   -webkit-font-smoothing: antialiased;
   position: relative;
   padding: .8em 1.4em;
   padding-right: 4.7em;
-  background: #009ED8;
+  background: #FF8000;
   border: none;
-  color: white;
+  outline: none;
+  color: white !important;
   transition: .2s;
   min-width: 15em;
   text-decoration: none;
 }
 
-#homepage-slider .button:before,
-#homepage-slider .button:after,
-a.button:before,
-a.button:after {
+#homepage-slider .pointer-button:before,
+#homepage-slider .pointer-button:after,
+a.pointer-button:before,
+a.pointer-button:after {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -493,20 +533,19 @@ a.button:after {
   transition: .2s;
   transform-origin: 50% 60%;
 }
-#homepage-slider .button:before,
-a.button:before {
+#homepage-slider .pointer-button:before,
+a.pointer-button:before {
   background: rgba(0, 0, 0, 0.1);
 }
-#homepage-slider .button:hover,
-a.button:hover {
-  background: #0079a5;
+#homepage-slider .pointer-button:hover,
+a.pointer-button:hover {
 }
-#homepage-slider .button:active,
-#homepage-slider .button:focus,
-a.button:active,
-a.button:focus {
-  background: #002e3f;
+#homepage-slider .pointer-button:active,
+#homepage-slider .pointer-button:focus,
+a.pointer-button:active,
+a.pointer-button:focus {
   outline: none;
+  border: none;
 }
 #homepage-slider .arrow,
 a.arrow {

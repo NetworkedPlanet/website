@@ -13,11 +13,6 @@ layout: homepage
         </p>
     </div>
 </div>
-<div class="row" id="row-cta-button">
-    <div class="col-sm-12 text-center">
-        <a class="button arrow text-left" href="/services">View All Services</a>
-    </div>
-</div>
 <div class="double-spacer"></div>
 
 
@@ -30,9 +25,7 @@ layout: homepage
                 <p>Linked Data is a technique for publishing data using existing web standards in a way that creates an interconnected Web of data. These relationships provide context and descriptive power to the core data making it more findable and increasing its usefulness to data consumers.</p>
             </div>
             <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
-                <form action="/draft">
-                    <button class="button arrow" href="/linked-data">More About Linked Data</button>
-                </form>
+                <a class="pointer-button arrow text-left sp-selectable" href="/linked-data">More About Linked Data</a>
             </div>
         </div>
 
@@ -44,9 +37,7 @@ layout: homepage
                 </p>
             </div>
             <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
-                <form action="/draft">
-                    <button class="button arrow" href="/consultancy">More About Consultancy</button>
-                </form>
+                <a class="pointer-button arrow text-left sp-selectable" href="/consultancy">More About Consultancy</a>
             </div>
         </div>
 
@@ -57,9 +48,7 @@ layout: homepage
                 <p>Semantic Web experts since 2004, we run training courses and seminars to bring your team up to speed with Linked Data concepts and techniques. </p>
             </div>
             <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
-              <form action="/draft">
-                    <button class="button arrow" href="/training">More About Training</button>
-                </form>
+                <a class="pointer-button arrow text-left sp-selectable" href="/training">More About Training</a>
             </div>
         </div>
 
@@ -71,9 +60,7 @@ layout: homepage
                 </p>
             </div>
             <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
-                <form>
-                    <button class="button arrow" href="/free-open-data-publishing">More About DataDock</button>
-                </form>
+                <a class="pointer-button arrow text-left sp-selectable" href="/free-open-data-publishing">More About DataDock</a>
             </div>
         </div>
 
@@ -107,7 +94,10 @@ layout: homepage
     </div>
 </div>
 
-<div class="spacer"></div>
+<div class="double-spacer"></div>
+<hr />
+<div class="double-spacer"></div>
+
 <div class="row" id="row-blog-heading">
     <div class="col-lg-12">
         <h2>From the blog</h2>
@@ -122,6 +112,13 @@ layout: homepage
 </div>
 <div class="row" id="row-blog-posts-2">
     {% for post in site.posts offset:2 limit:2 %}
+    <div class="col-sm-6 text-left">
+        {% include teaser-post.html post=post %}
+    </div>
+    {% endfor %}
+</div>
+<div class="row" id="row-blog-posts-3">
+    {% for post in site.posts offset:4 limit:2 %}
     <div class="col-sm-6 text-left">
         {% include teaser-post.html post=post %}
     </div>

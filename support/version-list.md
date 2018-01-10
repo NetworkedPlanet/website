@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Product Support
+title: Networked Planet product version list
 description: Support, upgrades and product documentation
 ---
 
