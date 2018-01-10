@@ -1,0 +1,84 @@
+---
+layout: homepage
+mailchimp: true
+---
+<!-- Homepage Section -->
+<section id="intro" class="sn-section">
+	<div class="container-fluid homepage draft">
+		<div class="row" id="row-2">
+			<div class="col-sm-12">
+				<p class="intropara lead">
+					We provide the <span class="highlight">knowledge, experience and tools</span>
+					to help organisations
+					of all sizes make the best use of their data,
+					content and knowledge. We connect
+					people with the information they need, when they need it.
+				</p>
+				<div class="text-center">
+					<a class="btn page-scroll btn-lg btn-primary text-center" href="/services">All our services</a>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="spacer"></div>
+
+
+		<div class="row cta home-mid-row">
+
+			<div class="col-sm-4">
+				<a href="/more-info/projects-and-consultancy" title="Projects & Consultancy">
+					<img src="/assets/images/homepage/logos/consultancy.png" alt="Consultancy"/>
+				</a>
+				<a href="/more-info/projects-and-consultancy" title="Projects & Consultancy"><h2>Training & Consultancy</h2></a>
+				<p>Large or small, we help you gain control of your data</p>
+			</div>
+
+			<div class="col-sm-4">
+
+				<a href="/more-info/datadock" title="DataDock">
+					<img src="/assets/images/homepage/logos/datadock.png" alt="DataDock"/>
+				</a>
+				<a href="/more-info/datadock" title="DataDock"><h2>DataDock</h2></a>
+				<p>Free cloud-hosted data publishing portal</p>
+			</div>
+
+			<div class="col-sm-4">
+				<a href="/more-info/dataplatform" title="Data Platform">
+					<img src="/assets/images/homepage/logos/dataplatform.png" alt="Data Platform"/>
+				</a>
+				<a href="/more-info/dataplatform" title="Data Platform"><h2>Products</h2></a>
+				<p></p>
+			</div>
+
+
+
+
+		</div>
+
+		<div class="spacer"></div>
+		<div class="row" id="row-3">
+			<div class="col-lg-12">
+				<h2>From the blog</h2>
+			</div>
+		</div>
+		<div class="row" id="row-4">
+					{% for post in site.posts limit:2 %}
+					<div class="col-sm-6 text-left">
+						{% include teaser-post.html post=post %}
+					</div>
+					{% endfor %}
+		</div>
+		<div class="row" id="row-5">
+			{% for post in site.posts offset:2 limit:2 %}
+			<div class="col-sm-6 text-left">
+				{% include teaser-post.html post=post %}
+			</div>
+			{% endfor %}
+		</div>
+		<div class="row" id="row-6">
+			<p class="text-right"><a href="/blog" title="More blog posts">More blog posts&raquo;</a> </p>
+		</div>
+		<div class="spacer"></div>
+	</div>
+</section>

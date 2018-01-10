@@ -3,7 +3,11 @@
         <div class="spacer">&nbsp;</div>
         <div class="row">
             <div class="col-xs-6">
-                <p>&copy; 2016 Networked Planet Limited.</p>
+                <p>&copy; <span id="crYear">2017</span> Networked Planet Limited.</p>
+                <script>
+                    var d = new Date();
+                    document.getElementById("crYear").innerHTML = d.getFullYear();
+                </script>
             </div>
             <div class="col-xs-6">
                 <div class="pull-right">

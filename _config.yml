@@ -1,7 +1,7 @@
 # Site settings
 title: NetworkedPlanet
 email: contact@networkedplanet.com
-description: Experts in Linked and Open Data Publishing
+description: Linked Data Consultancy and Software
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://networkedplanet.com" # the base hostname & protocol for your site
 twitter: "@nwplanet"

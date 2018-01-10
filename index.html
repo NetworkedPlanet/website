@@ -1,96 +1,130 @@
 ---
 layout: homepage
-mailchimp: true
 ---
-<!-- Homepage Section -->
-    <section id="intro" class="sn-section">
-        <div class="container-fluid homepage">
-			<div class="row cta">
-				<div class="col-sm-3">
-					<div id="box-2" class="box">
-						<a href="/more.html#building-data-strategies" title="Building data strategies">
-							<img id="image-2" src="/assets/images/homepage/cta/knight.png" alt="Chess Knight"/>
-						</a>
-						<span class="caption simple-caption">
-        					<h2>Building data strategies</h2>
-						</span>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div id="box-1" class="box">
-						<a href="/more.html#taking-control-of-your-data" title="Taking control of your data">
-						<img id="image-1" src="/assets/images/homepage/cta/origami.png" alt="origami" />
-						</a>
-						<span class="caption simple-caption">
-							<h2>Taking control of your data</h2>
-						</span>
-					</div>
-				</div>
 
-				<div class="col-sm-3">
-					<div id="box-3" class="box">
-						<a href="/more.html#use-open-data-with-confidence" title="Use open data with confidence">
-							<img id="image-3" src="/assets/images/homepage/cta/robot.png" alt="Robot"/></a>
-						<span class="caption simple-caption">
-        					<h2>Use open data with confidence</h2>
-						</span>
-					</div>
-				</div>
-				<div class="col-sm-3">
-					<div id="box-4" class="box">
-						<a href="/more.html#strengthening-your-data-team" title="Strengthening your data team">
-							<img id="image-4" src="/assets/images/homepage/cta/rosie.png" alt="Rosie The Riveter"/></a>
-							<span class="caption simple-caption">
-        					<h2>Strengthening your data team</h2>
-						</span>
-					</div>
-				</div>
-			</div>
-			<div class="spacer"></div>
-			<div class="row" id="row-2">
-				<div class="col-sm-6">
-					<p class="intropara lead">
-						We provide the <span class="highlight">knowledge, experience and tools</span>
-						to help organisations
-						of all sizes make the best use of their data,
-						content and knowledge. We connect
-						people with the information they need, when they need it.
-					</p>
-					<div class="text-center">
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="/services">Find out more</a>
-						<a class="btn page-scroll btn-lg btn-primary text-center" href="/upcoming">Upcoming Events</a>
-					</div>
-				</div>
-				<div class="col-sm-6 text-justify">
-					<h2>News</h2>
-					<ul class="news">
-						{% for post in site.posts limit:2 %}
-						<li>
-							{% include teaser-post.html post=post %}
-						</li>
-						{% endfor %}
-					</ul>
-					<p class="text-right"><a href="/blog" title="More blog posts">More &raquo;</a> </p>
-				</div>
-			</div>
-			<div class="spacer"></div>
-			<div class="row" id="row-3">
-				<div class="col-sm-6">
-					<div class="embed-responsive embed-responsive-16by9">
-						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EbpRofMqzF0"></iframe>
-					</div>
-				</div>
-				<div class="col-sm-6 text-justify">
-					<h2>Who we are</h2>
-					<p>At Networked Planet we're committed to using our years of experience with information management
-						to help companies that are helping others. Our "data for good" projects focus on helping
-						charities and voluntary organisations be more effective in their use of data.</p>
-					<p>We offer <a href="/services">consultancy</a> and <a href="/training">training</a> to help organisations tackle digital information management
-						challenges with confidence. We also build standards-based open source <a href="/products">software and tools</a>.</p>
-					<p>Every project should be built from the ground up, tailor-made to your needs.
-						To start that conversation just <a href="#contact">drop us a line</a>. </p>
-				</div>
-			</div>
-			<div class="spacer"></div>
+<div class="row" id="row-intro">
+    <div class="col-sm-12 text-center">
+        <p class="intropara lead">
+            We provide the <span class="highlight">knowledge, experience and tools</span>
+            to help organisations
+            of all sizes make the best use of their data,
+            content and knowledge. We connect
+            people with the information they need, when they need it.
+        </p>
+    </div>
+</div>
+<div class="double-spacer"></div>
+
+
+<div id="homepage-slider" class="slider-pro">
+    <div class="sp-slides">
+        <div class="sp-slide sp-linked-data">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank_grey.gif" />
+            <div class="sp-layer sp-static sp-padding" data-position="topLeft" data-width="800">
+                <h2>Linked Data</h2>
+                <p>Linked Data is a technique for publishing data using existing web standards in a way that creates an interconnected Web of data. These relationships provide context and descriptive power to the core data making it more findable and increasing its usefulness to data consumers.</p>
+            </div>
+            <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
+                <a class="pointer-button arrow text-left sp-selectable" href="/linked-data">More About Linked Data</a>
+            </div>
         </div>
-    </section>
+
+        <div class="sp-slide sp-consultancy">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank_grey.gif" />
+            <div class="sp-layer sp-static sp-padding" data-position="topLeft" data-width="800">
+                <h2>Consultancy</h2>
+                <p>Getting your Linked Data project off the ground can be a daunting task. We have the skills and experience to guide you and your team through the strategic and technical decisions you need to make.
+                </p>
+            </div>
+            <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
+                <a class="pointer-button arrow text-left sp-selectable" href="/consultancy">More About Consultancy</a>
+            </div>
+        </div>
+
+        <div class="sp-slide sp-training">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank_grey.gif"/>
+            <div class="sp-layer sp-static sp-padding" data-position="topLeft" data-width="800">
+                <h2>Training</h2>
+                <p>Semantic Web experts since 2004, we run training courses and seminars to bring your team up to speed with Linked Data concepts and techniques. </p>
+            </div>
+            <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
+                <a class="pointer-button arrow text-left sp-selectable" href="/training">More About Training</a>
+            </div>
+        </div>
+
+        <div class="sp-slide sp-datadock">
+            <img class="sp-image" src="/assets/sliderpro/css/images/blank_grey.gif"/>
+            <div class="sp-layer sp-static sp-padding" data-position="topLeft" data-width="800">
+                <h2>DataDock</h2>
+                <p>Publishing Linked Open Data should not cost the Earth. We provide DataDock, a free service to convert and publish CSV data as Linked Open Data. Your data is stored in your own GitHub account along with a complete static data portal website. We provide the web magic that turns this static site into a Linked Open Data portal.
+                </p>
+            </div>
+            <div class="sp-layer sp-static sp-padding" data-position="bottomLeft" data-width="800">
+                <a class="pointer-button arrow text-left sp-selectable" href="/free-open-data-publishing">More About DataDock</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="sp-thumbnails">
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">Linked Data</div>
+            </div>
+        </div>
+
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">Consultancy</div>
+            </div>
+        </div>
+
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">Training</div>
+            </div>
+        </div>
+
+        <div class="sp-thumbnail">
+            <div class="sp-thumbnail-text">
+                <div class="sp-thumbnail-title">DataDock</div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="double-spacer"></div>
+<hr />
+<div class="double-spacer"></div>
+
+<div class="row" id="row-blog-heading">
+    <div class="col-lg-12">
+        <h2>From the blog</h2>
+    </div>
+</div>
+<div class="row" id="row-blog-posts-1">
+    {% for post in site.posts limit:2 %}
+    <div class="col-sm-6 text-left">
+        {% include teaser-post.html post=post %}
+    </div>
+    {% endfor %}
+</div>
+<div class="row" id="row-blog-posts-2">
+    {% for post in site.posts offset:2 limit:2 %}
+    <div class="col-sm-6 text-left">
+        {% include teaser-post.html post=post %}
+    </div>
+    {% endfor %}
+</div>
+<div class="row" id="row-blog-posts-3">
+    {% for post in site.posts offset:4 limit:2 %}
+    <div class="col-sm-6 text-left">
+        {% include teaser-post.html post=post %}
+    </div>
+    {% endfor %}
+</div>
+<div class="row" id="row-blog-posts-more">
+    <p class="text-right"><a href="/blog" title="More blog posts">More blog posts&raquo;</a> </p>
+</div>
+<div class="spacer"></div>
