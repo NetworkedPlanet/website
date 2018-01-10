@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Linked Data Consultancy
-description: 
+description: We can help you identify where and how Linked Data can be used to improve your business processes and outcomes.
 ---
 
 ## Linked Data Consultancy
