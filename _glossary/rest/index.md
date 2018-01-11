@@ -1,6 +1,7 @@
 ---
 layout: page
 title: REST
+slug: rest
 ---
 
 REST is an architectural style where stateless servers provide representations of resources under its control. Client applications use known information about the representation content type to decide how to operate.

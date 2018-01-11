@@ -1,6 +1,7 @@
 ---
 layout: page
 title: SPARQL
+slug: sparql
 ---
 
 SPARQL is the query language for RDF. SPARQL can be used to express queries across diverse data sources, whether the data is stored natively as RDF or viewed as RDF via middleware.

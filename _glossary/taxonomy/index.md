@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Taxonomy
+slug: taxonomy
 ---
 
 A Taxonomy is a set of concepts, generally organized into a hierarchical structure. Concepts are more general at the top and become more specialised further down in the tree. Taxonomies are often used to create controlled vocabularies of classification terms. These taxonomy concepts can then be used to classify content, or even other concepts.

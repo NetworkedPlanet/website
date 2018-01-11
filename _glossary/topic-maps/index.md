@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Topic Maps
+slug: topic-maps
 ---
 
 ISO13250 – Topic Maps Standard is one of the semantic standards supported by our products. This standard defines a model and syntax for generic knowledge representation with a particular focus on using knowledge structures to organize content.

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: RDF
+slug: rdf
 ---
 
 RDF (Resource Description Framework) is a standard model for data interchange on the Web.

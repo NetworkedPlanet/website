@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Ontology
+slug: ontology
 ---
 
 An ontology is a model that describes types of things that exist in a knowledge domain and the types of relationships between them.

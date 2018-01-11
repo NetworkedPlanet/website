@@ -1,0 +1,23 @@
+---
+layout: page
+title: Glossary
+permalink: /glossary/index.html
+---
+
+<section>
+    <h1>{{page.title}}</h1>
+
+    <p class="lead text-center">Information management and metadata management practitioners throw around a lot of technical terms. Let us guide you through some of the key concepts to understand.</p>
+
+    <hr />
+
+    {% assign glossary = site.glossary | sort: "name" %}
+
+    {% for term in glossary %}
+    <article class="glossary-term">
+        <h2><a href="/glossary/{{ term.slug }}" title="{{ term.title }}">{{ term.title }}</a></h2>
+        <p>{{ term.content }}</p>
+    </article>
+    {% endfor %}
+
+</section>

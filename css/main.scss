@@ -104,6 +104,12 @@ blockquote {
   padding: 1em;
 }
 
+article.glossary-term {
+  padding-bottom: 1em;
+  border-bottom: 1px dotted #c7c7c7;
+  margin-bottom: 1em;
+}
+
 /* Supprt page
 -------------------------------------------------- */
 section#support .cards {
