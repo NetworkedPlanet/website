@@ -18,6 +18,8 @@ dotNetRDF is...
 * A common .NET API for working with RDF triple stores such as AllegroGraph, Jena, Stardog and Virtuoso.
 * A suite of command-line and GUI tools for working with RDF under Windows
 
+Go to the [dotNetRDF website](http://www.dotnetrdf.org/ "dot net RDF website").
+
 ## BrightstarDB
 
 BrightstarDB is...
@@ -25,5 +27,7 @@ BrightstarDB is...
 * an RDF triple store with advanced NoSQL features for .NET developers
 * Cross-platform - on Windows, Linux, OSX, Windows Phone, Android and iOS, with a single consistent data file format across all platforms. 
 * embeddable inside your application or available as a server
+
+Go to the [BrightstarDB website](http://brightstardb.com/ "bright star DB website").
 
 For businesses who would like to use open-source software but require the peace of mind that comes with a support and maintenance contract, we offer [technical support contracts specifically for dotNetRDF and BrightstarDB](/support "Networked Planet support options").

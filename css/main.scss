@@ -36,7 +36,6 @@ dd {
 }
 .navbar-brand {
 	padding: 0px;
-	padding-right: 40px;
 }
 
 .navbar {
@@ -47,6 +46,16 @@ dd {
 .navbar-header,
 .navbar-nav {
   margin-top: 10px;
+}
+.nav > li > a {
+  padding: 10px !important;
+}
+.footer-nav a {
+  border-left: 1px solid #777;
+  padding:0 1em;
+}
+.footer-nav a:first-child {
+  border-left: none;
 }
 /* hexagon icon margins */
 .hb-lg-margin, .hb-md-margin, .hb-sm-margin, .hb-xs-margin {
@@ -282,6 +291,10 @@ body {
 	.text-left-sm {
 		text-align: left;
 	}
+
+  .navbar-brand {
+    padding-right: 40px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
